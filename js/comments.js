@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const submitBtn = document.getElementById('submit-comment-btn');
   const formMsg = document.getElementById('form-feedback');
 
-  // Replace with user deployed Google Apps Script Web App URL
-  const GAS_ENDPOINT = window.JEEP_HORROR_GAS_URL || 'https://script.google.com/macros/s/AKfycby_placeholder/exec';
+  // Real deployed Google Apps Script Web App URL
+  const GAS_ENDPOINT = window.JEEP_HORROR_GAS_URL || 'https://script.google.com/macros/s/AKfycbz6sFYLpzAk6RtuL6J68fYF4VFj5Gbsf3nG4fxZm7agXPmDNB_g7CPCVZwulXYOQVTLRA/exec';
 
   if (commentForm) {
     commentForm.addEventListener('submit', async (e) => {
