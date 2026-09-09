@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEEP HORROR - Maglaro Online, Gabay sa Pasada at Philippine Horror Lore</title>
+  <meta name="description" content="Maglaro ng JEEP HORROR nang direkta sa browser! Magmaneho ng tradisyunal na jeepney sa hatinggabi, magsukli nang tama, at mag-ingat sa mga doppelganger at nilalang ng kadiliman.">
+  <meta name="keywords" content="JEEP HORROR, Neuroticfly Games, jeepney horror game, laro ng kababalaghan, Godot horror, doppelganger game, Philippine mythology">
+  <meta name="author" content="Neuroticfly Games Fan Community">
+  <meta name="theme-color" content="#ff2a6d">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeep-horror.github.io/">
+  <meta property="og:title" content="JEEP HORROR - Philippine Jeepney Night Driving Horror">
+  <meta property="og:description" content="Kolektahin ang pamasahe, magsukli ng barya, at kilalanin kung sino ang tunay na tao at halimaw sa loob ng iyong jeepney.">
+  <meta property="og:image" content="https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/original/zjrvG6.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JEEP HORROR - Maglaro Online sa Browser">
+  <meta name="twitter:description" content="May mga pasaherong hindi tao. Mag-ingat sa huling biyahe ng gabi.">
+  <meta name="twitter:image" content="https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/508x254%23mb/HEQwuE.jpg">
+
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://jeep-horror.github.io/">
+  <link rel="alternate" hreflang="tl" href="https://jeep-horror.github.io/">
+  <link rel="alternate" hreflang="fil-PH" href="https://jeep-horror.github.io/">
+  <link rel="alternate" hreflang="en" href="https://jeep-horror.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://jeep-horror.github.io/">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "JEEP HORROR",
+    "description": "Drive your traditional Philippine jeepney during the graveyard shift while managing fares and identifying terrifying supernatural anomalies disguised as commuters.",
+    "genre": ["Survival Horror", "Psychological Horror", "Simulation"],
+    "gamePlatform": ["Web Browser", "Windows PC", "Android", "Linux", "macOS"],
+    "operatingSystem": "Any HTML5 Browser",
+    "applicationCategory": "Game",
+    "author": {
+      "@type": "Organization",
+      "name": "Neuroticfly Games",
+      "url": "https://neuroticfly.itch.io"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "ratingCount": "26",
+      "bestRating": "5"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">🛺</div>
+        <span>JEEP</span> HORROR
+      </a>
+      <ul class="nav-links">
+        <li><a href="#play" class="active">Maglaro</a></li>
+        <li><a href="#features">Mga Katangian</a></li>
+        <li><a href="#video">Gameplay</a></li>
+        <li><a href="/blog/">Mga Gabay</a></li>
+        <li><a href="#comments">Komento</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="/" class="active">Tagalog</a>
+        <a href="/en/">English</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Header -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-tagline">🌙 Huling Biyahe sa Hatinggabi • Philippine Indie Horror</span>
+        <h1 class="hero-title">Magmaneho ng Jeepney sa <span class="highlight">Dilim ng Maynila</span></h1>
+        <p class="hero-desc">
+          Hawakan ang manibela ng pampasaherong jeepney sa graveyard shift. Kolektahin ang pamasahe, magsukli gamit ang kalkulador, ngunit higit sa lahat — <strong>huwag magtiwala sa lahat ng sumasakay sa likod mo</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Playable Stage Container (Lazy Loaded Iframe) -->
+    <section id="play" class="container">
+      <div id="game-stage-wrapper" class="game-stage-wrapper">
+        <div class="game-stage-header">
+          <div class="game-stage-info">
+            <span class="status-dot"></span>
+            <span>Godot HTML5 Engine • Libreng Laruin sa Browser</span>
+          </div>
+          <div class="game-actions">
+            <button id="reload-btn" class="btn-ctrl" title="I-reload ang laro">🔄 I-reset</button>
+            <button id="fullscreen-btn" class="btn-ctrl" title="Buong Screen">⛶ Fullscreen</button>
+          </div>
+        </div>
+
+        <div id="game-viewport" class="game-viewport">
+          <!-- Placeholder with Start Button to prevent blocking page render -->
+          <div id="game-placeholder" class="game-placeholder" style="background-image: url('https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/original/zjrvG6.jpg');">
+            <div class="game-placeholder-content">
+              <h3>JEEP HORROR: Pasada sa Hatinggabi</h3>
+              <p>Handa ka na bang sumabak sa ruta kung saan nagkukubli ang mga Doppelganger at Paring Pugot?</p>
+              <button id="play-game-btn" class="btn-play">
+                ▶ Simulan ang Pasada (Play Now)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-controls-hint">
+          <ul class="key-list">
+            <li><kbd>Mouse Left Click</kbd> Pumili / Makipag-usap</li>
+            <li><kbd>Calculator</kbd> Mag-input ng Pamasahe at Sukli</li>
+            <li><kbd>Rear-view Mirror</kbd> Tingnan ang mga pasahero sa likod</li>
+            <li><kbd>Radio</kbd> I-report ang kahina-hinalang nilalang</li>
+          </ul>
+          <span>Paalala: Gumagana sa PC at Mobile Browser</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Overview Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Mekanismo ng Laro</span>
+          <h2 class="section-title">Bakit Nakakakilabot ang Bawat Minuto sa Jeep?</h2>
+          <p class="section-subtitle">Pagsasama ng makatotohanang buhay-tsuper ng Pilipinas at katatakutang sikolohikal.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">👥</div>
+            <h3 class="card-title">Mga Doppelganger sa Biyahe</h3>
+            <p class="card-desc">
+              May mga nilalang na gagayahin nang buo ang anyo ng isang pasaherong nakasakay na. Kapag hindi mo napansin ang kaparehong mukha at hinayaan silang makababa, tapos ang iyong biyahe.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">💰</div>
+            <h3 class="card-title">Kalkulador at Saktong Sukli</h3>
+            <p class="card-desc">
+              "Barya lang po sa umaga!" Hindi madali magsukli habang nagmamaneho sa gabi. Pagsamahin ang mga 1, 5, at 10 pisong barya bago maubos ang pasensya ng mga commuters.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">📻</div>
+            <h3 class="card-title">Monster Book at Radyo</h3>
+            <p class="card-desc">
+              Sumangguni sa gabay ng tsuper upang basahin ang mga babala ukol sa Paring Pugot, White Lady ng Balete Drive, at mga mamamatay-tao sa loob ng jeepney.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gameplay Video Showcase -->
+    <section id="video" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Panoorin ang Gameplay</span>
+          <h2 class="section-title">Mga Streamer na Sinubukan ang Gabi ng Sindak</h2>
+          <p class="section-subtitle">Tingnan kung paano nakipagbuno ang mga tagahanga sa mga kakaibang pasahero.</p>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/zRiFNVovDh8" title="JEEP HORROR Gameplay ni Bobe-wan" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">"So Many Creatures And Monsters Keep Getting On My Bus!"</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Panoorin ang buong playthrough ni Bobe-wan kung paano kilalanin ang mga bampira at sumakay na kakaibang nilalang.</p>
+          </div>
+
+          <div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/ww-2AEGkuT8" title="JEEP HORROR Gameplay ni Fort Kenmei" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">Unang Tikim sa Bagong Philippine Folklore Game</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Pagsusuri ni Fort Kenmei sa nakapangingilabot na atmosferang binuo ng Neuroticfly Games.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Essential Guides Matrix -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Mga Detalyadong Gabay</span>
+          <h2 class="section-title">Estratehiya at Lihim sa Pag-survive</h2>
+          <p class="section-subtitle">Iwasan ang kamatayan sa pamamagitan ng aming eksklusibong mga gabay.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Gabay sa Survival</span>
+              <h3 class="blog-card-title"><a href="/blog/day-1-walkthrough-guide.html">Gabay sa Day 1: Paano Hindi Agad Mamatay sa Unang Pasada</a></h3>
+              <p class="blog-card-desc">Hakbang-hakbang na gabay para sa mga baguhang tsuper. Alamin kung kailan tatapak ng preno at kung paano basahin ang kinikilos ng mga unang pasahero.</p>
+              <div class="blog-card-footer">
+                <span>5 minutong basa</span>
+                <a href="/blog/day-1-walkthrough-guide.html">Basahin ang Gabay →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Mekanismo ng Pera</span>
+              <h3 class="blog-card-title"><a href="/blog/fare-calculator-change-mechanics.html">Saktong Sukli at Kalkulador: Sikreto sa Pagpapanatili ng Satisfaction</a></h3>
+              <p class="blog-card-desc">Huwag hayaang magalit ang mga pasahero dahil sa kulang na sukli. Pormula sa tamang kombinasyon ng mga barya at tamang bilis ng pag-abot.</p>
+              <div class="blog-card-footer">
+                <span>4 minutong basa</span>
+                <a href="/blog/fare-calculator-change-mechanics.html">Basahin ang Gabay →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Listahan ng Halimaw</span>
+              <h3 class="blog-card-title"><a href="/blog/monster-list-lore-secrets.html">Talaan ng mga Halimaw: Paring Pugot, Doppelganger at Lihim ng Balete</a></h3>
+              <p class="blog-card-desc">Kumpletong listahan ng mga kakaibang nilalang sa laro, mga palatandaan sa kanilang mukha, at tamang oras ng paggamit ng radyo at sagradong gamit.</p>
+              <div class="blog-card-footer">
+                <span>7 minutong basa</span>
+                <a href="/blog/monster-list-lore-secrets.html">Basahin ang Gabay →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Opisyal na Download</span>
+              <h3 class="blog-card-title"><a href="/blog/download-web-android-apk-safety.html">Opisyal na Download: Gabay sa itch.io, Steam at Ligtas na APK</a></h3>
+              <p class="blog-card-desc">Mag-ingat sa mga pekeng APK na kumakalat sa social media. Narito ang direktang opisyal na link para sa PC, Mac, Linux at orihinal na Android build.</p>
+              <div class="blog-card-footer">
+                <span>3 minutong basa</span>
+                <a href="/blog/download-web-android-apk-safety.html">Basahin ang Gabay →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="/blog/" class="btn-ctrl" style="display:inline-flex; padding:0.75rem 2rem; font-size:1rem; border-color:var(--accent-pink);">
+            📚 Tingnan ang Lahat ng Gabay sa Blog Hub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments & Feedback Section -->
+    <section id="comments" class="container">
+      <div class="comments-section">
+        <div style="margin-bottom: 2rem;">
+          <h2 style="font-size: 1.8rem; font-weight: 900; color: #fff; margin-bottom: 0.5rem;">Kuwentuhan ng mga Tsuper at Commuters</h2>
+          <p style="color: var(--text-secondary);">Ibahagi ang iyong karanasan, tips, o nakatatakot na engkuwentro sa laro.</p>
+        </div>
+
+        <!-- Submission Form -->
+        <form id="comment-form" class="comment-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="comment-name">Pangalan / Alyas *</label>
+              <input type="text" id="comment-name" class="form-control" placeholder="Halimbawa: Juan Driver" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-email">Email (Opsyonal)</label>
+              <input type="email" id="comment-email" class="form-control" placeholder="hindi ilalathala">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment-text">Iyong Komento o Karanasan *</label>
+            <textarea id="comment-text" class="form-control" placeholder="Ano ang pinakanakakatakot na pasaherong sumakay sa iyong jeep?" required></textarea>
+          </div>
+          <div>
+            <button type="submit" id="submit-comment-btn" class="btn-ctrl" style="background:var(--accent-pink); border-color:var(--accent-pink); color:#fff; font-weight:bold; padding:0.6rem 1.5rem;">
+              Ipadala ang Mensahe
+            </button>
+            <span id="form-feedback" style="display:none; margin-left:1rem; font-weight:600;"></span>
+          </div>
+        </form>
+
+        <!-- Static Baked Comments List -->
+        <div id="comments-list" class="comment-list">
+<!-- BAKED_COMMENTS_START -->
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">Bobe-wan <span class="author-badge">Pasahero</span></span>
+        <span class="comment-time">2026-09-08</span>
+      </div>
+      <div class="comment-content">This was an awesome game my dude! Really entertaining all around! It was fun kicking those vampires off my jeepney and figuring out who was the monster hiding! Love the sukli (change) mechanics and passenger banter!</div>
+    </div>
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">Fort Kenmei <span class="author-badge">Pasahero</span></span>
+        <span class="comment-time">2026-09-07</span>
+      </div>
+      <div class="comment-content">Always happy to see new Philippine horror folklore games from Neuroticfly Games! The atmosphere in the driver&#039;s cabin while driving midnight provincial routes gives me absolute chills.</div>
+    </div>
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">SpicyBiscuit <span class="author-badge">Pasahero</span></span>
+        <span class="comment-time">2026-09-06</span>
+      </div>
+      <div class="comment-content">Super creative concept! The tension between giving correct change with calculator and checking the rear-view mirror for doppelgangers is peak panic gameplay. Wishlisted on Steam!</div>
+    </div>
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">Kuwentong Driver <span class="author-badge">Pasahero</span></span>
+        <span class="comment-time">2026-09-05</span>
+      </div>
+      <div class="comment-content">Sobrang relatable ng mga pasahero - call center agent, estudyante, tapos biglang may Paring Pugot at Balete Drive white lady! Galing ng pagkakagawa, walang generative AI kaya may kaluluwa ang visual art.</div>
+    </div>
+<!-- BAKED_COMMENTS_END -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Tungkol sa JEEP HORROR</h4>
+        <p style="color:var(--text-secondary); margin-bottom:1rem;">
+          Isang experimental na survival indie horror game na likha ng <strong>Neuroticfly Games</strong> gamit ang Godot Engine. Walang ginamit na Generative AI.
+        </p>
+        <p>I-wishlist ang opisyal na bersyon sa <a href="https://store.steampowered.com/app/4676680/JEEP_HORROR/" target="_blank" rel="noopener">Steam Store</a> o suportahan sa <a href="https://www.patreon.com/neuroticfly" target="_blank" rel="noopener">Patreon</a>.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Mga Mabilisang Link</h4>
+        <ul>
+          <li><a href="#play">Maglaro sa Browser</a></li>
+          <li><a href="/blog/day-1-walkthrough-guide.html">Gabay sa Survival</a></li>
+          <li><a href="/blog/monster-list-lore-secrets.html">Talaan ng mga Halimaw</a></li>
+          <li><a href="/blog/download-web-android-apk-safety.html">Opisyal na Download</a></li>
+          <li><a href="/en/">English Version</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Komunidad</h4>
+        <ul>
+          <li><a href="https://neuroticfly.itch.io/jeep-horror" target="_blank" rel="noopener">itch.io Page</a></li>
+          <li><a href="https://discord.gg/peFGsywsUy" target="_blank" rel="noopener">Official Discord</a></li>
+          <li><a href="https://twitter.com/neuroticfly" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://www.youtube.com/@neuroticfly" target="_blank" rel="noopener">Developer YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 JEEP HORROR Fan Hub. Lahat ng karapatan sa laro ay pag-aari ng Neuroticfly Games. Ginawa para sa komunidad ng mga manlalaro.</p>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner (Google Consent Mode v2) -->
+  <div id="consent-banner" class="consent-banner">
+    <p style="font-size:0.85rem; color:#e2e8f0; margin-bottom:0.5rem;">
+      Gumagamit kami ng cookies upang mapabuti ang karanasan sa paglalaro at analytics alinsunod sa Google privacy guidelines.
+    </p>
+    <div class="consent-actions">
+      <button id="consent-accept" class="btn-ctrl" style="background:var(--accent-pink); border-color:var(--accent-pink); color:#fff; font-size:0.8rem;">Tanggapin Lahat</button>
+      <button id="consent-decline" class="btn-ctrl" style="font-size:0.8rem;">Tanggihan</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/consent.js"></script>
+  <script src="/js/comments-data.js"></script>
+  <script src="/js/comments.js"></script>
+  <script src="/js/game-loader.js"></script>
+</body>
+</html>
+

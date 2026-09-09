@@ -1,0 +1,8 @@
+# Robots.txt for JEEP HORROR
+User-agent: *
+Allow: /
+
+# Disallow embedded internal assets from direct scrapers
+Disallow: /game/
+
+Sitemap: https://jeep-horror.github.io/sitemap.xml

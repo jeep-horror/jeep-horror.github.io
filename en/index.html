@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEEP HORROR - Play Online, Survival Walkthrough & Philippine Folklore Guide</title>
+  <meta name="description" content="Play JEEP HORROR directly in your web browser! Drive your traditional Philippine jeepney on the graveyard shift, return exact change, and detect terrifying doppelgangers.">
+  <meta name="keywords" content="JEEP HORROR, Neuroticfly Games, jeepney horror, Godot indie horror, play in browser, Philippine folklore horror, doppelganger game, steam release">
+  <meta name="author" content="Neuroticfly Games Fan Community">
+  <meta name="theme-color" content="#ff2a6d">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeep-horror.github.io/en/">
+  <meta property="og:title" content="JEEP HORROR - Philippine Jeepney Night Driving Horror">
+  <meta property="og:description" content="Collect fares, compute exact change with your calculator, and distrust whoever sits behind you in the jeepney cabin.">
+  <meta property="og:image" content="https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/original/zjrvG6.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JEEP HORROR - Play Online in Browser">
+  <meta name="twitter:description" content="Not all commuters are human. Survive the graveyard shift.">
+  <meta name="twitter:image" content="https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/508x254%23mb/HEQwuE.jpg">
+
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://jeep-horror.github.io/en/">
+  <link rel="alternate" hreflang="tl" href="https://jeep-horror.github.io/">
+  <link rel="alternate" hreflang="fil-PH" href="https://jeep-horror.github.io/">
+  <link rel="alternate" hreflang="en" href="https://jeep-horror.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://jeep-horror.github.io/">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "JEEP HORROR",
+    "description": "Step into the driver's seat of an iconic Philippine jeepney during the graveyard shift. Collect fares, compute change, and survive supernatural urban legends and doppelgangers.",
+    "genre": ["Survival Horror", "Psychological Horror", "Simulation"],
+    "gamePlatform": ["Web Browser", "Windows PC", "Android", "Linux", "macOS"],
+    "operatingSystem": "Any HTML5 Browser",
+    "applicationCategory": "Game",
+    "author": {
+      "@type": "Organization",
+      "name": "Neuroticfly Games",
+      "url": "https://neuroticfly.itch.io"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "ratingCount": "26",
+      "bestRating": "5"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">🛺</div>
+        <span>JEEP</span> HORROR
+      </a>
+      <ul class="nav-links">
+        <li><a href="#play" class="active">Play Game</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#video">Gameplay</a></li>
+        <li><a href="/en/blog/">Guides</a></li>
+        <li><a href="#comments">Community</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="/">Tagalog</a>
+        <a href="/en/" class="active">English</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Header -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-tagline">🌙 Graveyard Shift In The Streets • Philippine Indie Horror</span>
+        <h1 class="hero-title">Drive Your Jeepney Into <span class="highlight">The Night Terrors</span></h1>
+        <p class="hero-desc">
+          Take the driver's seat of an iconic Philippine jeepney during the midnight graveyard shift. Collect fares, calculate change, and keep your eyes peeled on the rear-view mirror — <strong>because some commuters are not human</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Playable Stage Container (Lazy Loaded Iframe) -->
+    <section id="play" class="container">
+      <div id="game-stage-wrapper" class="game-stage-wrapper">
+        <div class="game-stage-header">
+          <div class="game-stage-info">
+            <span class="status-dot"></span>
+            <span>Godot HTML5 Engine • Free to Play in Browser</span>
+          </div>
+          <div class="game-actions">
+            <button id="reload-btn" class="btn-ctrl" title="Reload Game">🔄 Reset</button>
+            <button id="fullscreen-btn" class="btn-ctrl" title="Enter Fullscreen">⛶ Fullscreen</button>
+          </div>
+        </div>
+
+        <div id="game-viewport" class="game-viewport">
+          <!-- Placeholder with Start Button to prevent blocking page render -->
+          <div id="game-placeholder" class="game-placeholder" style="background-image: url('https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/original/zjrvG6.jpg');">
+            <div class="game-placeholder-content">
+              <h3>JEEP HORROR: Graveyard Shift</h3>
+              <p>Can you identify the doppelgangers, compute exact change, and survive until daybreak?</p>
+              <button id="play-game-btn" class="btn-play">
+                ▶ Play Game Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-controls-hint">
+          <ul class="key-list">
+            <li><kbd>Mouse Left Click</kbd> Select / Talk / Confirm</li>
+            <li><kbd>Calculator</kbd> Enter Fare & Return Change</li>
+            <li><kbd>Rear-view Mirror</kbd> Monitor Passengers in Cabin</li>
+            <li><kbd>Radio</kbd> Report Supernatural Anomalies</li>
+          </ul>
+          <span>Works seamlessly on Desktop and Mobile Browsers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Overview Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Core Mechanics</span>
+          <h2 class="section-title">Why Every Midnight Passenger Puts You on Edge</h2>
+          <p class="section-subtitle">A claustrophobic fusion of authentic Filipino public transit culture and psychological survival horror.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">👥</div>
+            <h3 class="card-title">Cabin Doppelgangers</h3>
+            <p class="card-desc">
+              Malevolent entities will perfectly mimic another passenger already seated behind you. If you fail to spot the duplicate face and let them step off, your route ends permanently.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">💰</div>
+            <h3 class="card-title">Fare Calculator & Exact Change</h3>
+            <p class="card-desc">
+              "Coins only in the morning!" Computing change with 1, 5, and 10 peso coins in pitch darkness is frantic. Too slow or giving incorrect change tanks commuter satisfaction.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">📻</div>
+            <h3 class="card-title">Monster Book & Radio Alert</h3>
+            <p class="card-desc">
+              Consult the driver's logbook to decode hints on mythological horrors like the Headless Priest, Balete Drive apparitions, and disguised back-seat serial killers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gameplay Video Showcase -->
+    <section id="video" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Gameplay Showcase</span>
+          <h2 class="section-title">Watch Streamers Tackle the Night Shift</h2>
+          <p class="section-subtitle">See how indie horror creators react to the game's unnerving passenger anomalies.</p>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/zRiFNVovDh8" title="JEEP HORROR Walkthrough by Bobe-wan" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">"So Many Creatures And Monsters Keep Getting On My Bus!"</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Watch Bobe-wan's full entertaining walkthrough as he kicks vampires off his ride and figures out the hidden beasts.</p>
+          </div>
+
+          <div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/ww-2AEGkuT8" title="JEEP HORROR Gameplay by Fort Kenmei" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">First Impressions on Philippine Folklore Horror</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Fort Kenmei explores the dark urban atmosphere and immersive transit details crafted by Neuroticfly Games.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Essential Guides Matrix -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Strategy & Guides</span>
+          <h2 class="section-title">In-Depth Survival & Mechanics Walkthroughs</h2>
+          <p class="section-subtitle">Avoid untimely route termination with our verified expert playbooks.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Beginner Walkthrough</span>
+              <h3 class="blog-card-title"><a href="/en/blog/day-1-walkthrough-guide.html">Day 1 Walkthrough: How to Survive Your First Midnight Route</a></h3>
+              <p class="blog-card-desc">Step-by-step beginner guide. Learn when to brake, how to read initial passenger dialogue, and key habits to avoid instant death.</p>
+              <div class="blog-card-footer">
+                <span>5 min read</span>
+                <a href="/en/blog/day-1-walkthrough-guide.html">Read Guide →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Fare Mechanics</span>
+              <h3 class="blog-card-title"><a href="/en/blog/fare-calculator-change-mechanics.html">Fare Calculator & Change: How to Keep Passenger Satisfaction High</a></h3>
+              <p class="blog-card-desc">Never lose commuter patience over missing coins. The optimal denomination formula and speed techniques for the dashboard calculator.</p>
+              <div class="blog-card-footer">
+                <span>4 min read</span>
+                <a href="/en/blog/fare-calculator-change-mechanics.html">Read Guide →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Monster Catalog</span>
+              <h3 class="blog-card-title"><a href="/en/blog/monster-list-lore-secrets.html">Monster List & Lore Secrets: Spotting Doppelgangers & Headless Priests</a></h3>
+              <p class="blog-card-desc">Complete entity bestiary with facial distortion flags, behavioral cues, radio reporting timing, and holy item mechanics.</p>
+              <div class="blog-card-footer">
+                <span>7 min read</span>
+                <a href="/en/blog/monster-list-lore-secrets.html">Read Guide →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card-body">
+              <span class="blog-tag">Download & Safety</span>
+              <h3 class="blog-card-title"><a href="/en/blog/download-web-android-apk-safety.html">Official Downloads: itch.io, Steam Wishlist & Android APK Safety</a></h3>
+              <p class="blog-card-desc">Beware malicious third-party APKs floating on social feeds. Direct links to official PC, Mac, Linux, and genuine mobile downloads.</p>
+              <div class="blog-card-footer">
+                <span>3 min read</span>
+                <a href="/en/blog/download-web-android-apk-safety.html">Read Guide →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="/en/blog/" class="btn-ctrl" style="display:inline-flex; padding:0.75rem 2rem; font-size:1rem; border-color:var(--accent-pink);">
+            📚 Explore All Articles in the Blog Hub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments & Feedback Section -->
+    <section id="comments" class="container">
+      <div class="comments-section">
+        <div style="margin-bottom: 2rem;">
+          <h2 style="font-size: 1.8rem; font-weight: 900; color: #fff; margin-bottom: 0.5rem;">Commuter & Driver Dispatches</h2>
+          <p style="color: var(--text-secondary);">Share your in-game tips, survival scores, or uncanny passenger encounters.</p>
+        </div>
+
+        <!-- Submission Form -->
+        <form id="comment-form" class="comment-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="comment-name">Name / Handle *</label>
+              <input type="text" id="comment-name" class="form-control" placeholder="e.g. Midnight Driver" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-email">Email (Optional)</label>
+              <input type="email" id="comment-email" class="form-control" placeholder="Will not be published">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment-text">Your Dispatch or Feedback *</label>
+            <textarea id="comment-text" class="form-control" placeholder="What's the creepiest anomaly you picked up on your route?" required></textarea>
+          </div>
+          <div>
+            <button type="submit" id="submit-comment-btn" class="btn-ctrl" style="background:var(--accent-pink); border-color:var(--accent-pink); color:#fff; font-weight:bold; padding:0.6rem 1.5rem;">
+              Transmit Message
+            </button>
+            <span id="form-feedback" style="display:none; margin-left:1rem; font-weight:600;"></span>
+          </div>
+        </form>
+
+        <!-- Static Baked Comments List -->
+        <div id="comments-list" class="comment-list">
+<!-- BAKED_COMMENTS_START -->
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">Bobe-wan <span class="author-badge">Commuter</span></span>
+        <span class="comment-time">2026-09-08</span>
+      </div>
+      <div class="comment-content">This was an awesome game my dude! Really entertaining all around! It was fun kicking those vampires off my jeepney and figuring out who was the monster hiding! Love the sukli (change) mechanics and passenger banter!</div>
+    </div>
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">Fort Kenmei <span class="author-badge">Commuter</span></span>
+        <span class="comment-time">2026-09-07</span>
+      </div>
+      <div class="comment-content">Always happy to see new Philippine horror folklore games from Neuroticfly Games! The atmosphere in the driver&#039;s cabin while driving midnight provincial routes gives me absolute chills.</div>
+    </div>
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">SpicyBiscuit <span class="author-badge">Commuter</span></span>
+        <span class="comment-time">2026-09-06</span>
+      </div>
+      <div class="comment-content">Super creative concept! The tension between giving correct change with calculator and checking the rear-view mirror for doppelgangers is peak panic gameplay. Wishlisted on Steam!</div>
+    </div>
+
+    <div class="comment-item">
+      <div class="comment-header">
+        <span class="comment-author">Kuwentong Driver <span class="author-badge">Commuter</span></span>
+        <span class="comment-time">2026-09-05</span>
+      </div>
+      <div class="comment-content">Sobrang relatable ng mga pasahero - call center agent, estudyante, tapos biglang may Paring Pugot at Balete Drive white lady! Galing ng pagkakagawa, walang generative AI kaya may kaluluwa ang visual art.</div>
+    </div>
+<!-- BAKED_COMMENTS_END -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>About JEEP HORROR</h4>
+        <p style="color:var(--text-secondary); margin-bottom:1rem;">
+          An experimental psychological survival indie horror game developed by <strong>Neuroticfly Games</strong> with Godot Engine. No generative AI was used.
+        </p>
+        <p>Wishlist on <a href="https://store.steampowered.com/app/4676680/JEEP_HORROR/" target="_blank" rel="noopener">Steam Store</a> or support development on <a href="https://www.patreon.com/neuroticfly" target="_blank" rel="noopener">Patreon</a>.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#play">Play in Browser</a></li>
+          <li><a href="/en/blog/day-1-walkthrough-guide.html">Day 1 Walkthrough</a></li>
+          <li><a href="/en/blog/monster-list-lore-secrets.html">Monster & Anomaly Catalog</a></li>
+          <li><a href="/en/blog/download-web-android-apk-safety.html">Official Downloads</a></li>
+          <li><a href="/">Bersyong Tagalog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community & Socials</h4>
+        <ul>
+          <li><a href="https://neuroticfly.itch.io/jeep-horror" target="_blank" rel="noopener">itch.io Page</a></li>
+          <li><a href="https://discord.gg/peFGsywsUy" target="_blank" rel="noopener">Official Discord</a></li>
+          <li><a href="https://twitter.com/neuroticfly" target="_blank" rel="noopener">Twitter / X</a></li>
+          <li><a href="https://www.youtube.com/@neuroticfly" target="_blank" rel="noopener">Developer YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 JEEP HORROR Fan Hub. All game assets and copyrights belong to Neuroticfly Games. Created for the player community.</p>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner (Google Consent Mode v2) -->
+  <div id="consent-banner" class="consent-banner">
+    <p style="font-size:0.85rem; color:#e2e8f0; margin-bottom:0.5rem;">
+      We use cookies to enhance gameplay and analyze web traffic in accordance with Google Consent Mode guidelines.
+    </p>
+    <div class="consent-actions">
+      <button id="consent-accept" class="btn-ctrl" style="background:var(--accent-pink); border-color:var(--accent-pink); color:#fff; font-size:0.8rem;">Accept All</button>
+      <button id="consent-decline" class="btn-ctrl" style="font-size:0.8rem;">Decline</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/consent.js"></script>
+  <script src="/js/comments-data.js"></script>
+  <script src="/js/comments.js"></script>
+  <script src="/js/game-loader.js"></script>
+</body>
+</html>
+
