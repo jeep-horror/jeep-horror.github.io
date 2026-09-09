@@ -1,6 +1,6 @@
 /**
  * JEEP HORROR - Offline fallback comments data
- * Auto-synced on 2026-09-09T05:12:55.529Z
+ * Auto-synced on 2026-09-09T05:16:54.228Z
  */
 window.BAKED_COMMENTS_DATA = [
   {
