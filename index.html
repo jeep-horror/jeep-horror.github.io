@@ -1,369 +1,701 @@
-<!DOCTYPE html>
-<html lang="tl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JEEP HORROR - Maglaro Online, Gabay sa Pasada at Philippine Horror Lore</title>
-  <meta name="description" content="Maglaro ng JEEP HORROR nang direkta sa browser! Magmaneho ng tradisyunal na jeepney sa hatinggabi, magsukli nang tama, at mag-ingat sa mga doppelganger at nilalang ng kadiliman.">
-  <meta name="keywords" content="JEEP HORROR, Neuroticfly Games, jeepney horror game, laro ng kababalaghan, Godot horror, doppelganger game, Philippine mythology">
-  <meta name="author" content="Neuroticfly Games Fan Community">
-  <meta name="theme-color" content="#ff2a6d">
+<!DOCTYPE html><html lang="en" dir="ltr"><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v7.3.3"><!-- 生产环境独立域名自动重定向保护 (当通过 github.io 访问时秒级重定向到独立域名) --><script>(function(){const targetSiteUrl = "https://jeep-horror.github.io";
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jeep-horror.github.io/">
-  <meta property="og:title" content="JEEP HORROR - Philippine Jeepney Night Driving Horror">
-  <meta property="og:description" content="Kolektahin ang pamasahe, magsukli ng barya, at kilalanin kung sino ang tunay na tao at halimaw sa loob ng iyong jeepney.">
-  <meta property="og:image" content="https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/original/zjrvG6.jpg">
+  (function() {
+    if (window.location.hostname.endsWith('github.io') && targetSiteUrl) {
+      try {
+        var target = new URL(targetSiteUrl);
+        if (target.hostname && !target.hostname.endsWith('github.io') && target.hostname !== 'localhost') {
+          var repoPath = window.location.pathname.split('/')[1] || '';
+          var regex = new RegExp('^/' + repoPath);
+          var cleanPath = window.location.pathname.replace(regex, '') || '/';
+          window.location.replace(target.origin + cleanPath + window.location.search + window.location.hash);
+        }
+      } catch (e) {}
+    }
+  })();
+})();</script><!-- Canonical URL --><link rel="canonical" href="https://jeep-horror.github.io/"><!-- Alternate Hreflang Tags (Strict Multi-language SEO - No 404s) --><link rel="alternate" hreflang="en" href="https://jeep-horror.github.io/"><link rel="alternate" hreflang="tl" href="https://jeep-horror.github.io/tl"><link rel="alternate" hreflang="x-default" href="https://jeep-horror.github.io/"><!-- Primary Meta Tags --><title>JEEP HORROR - Play Online, Survival Walkthrough &amp; Wiki</title><meta name="title" content="JEEP HORROR - Play Online, Survival Walkthrough &amp; Wiki"><meta name="description" content="Play JEEP HORROR online for free! Drive through the midnight graveyard shift, calculate fare change, and survive terrifying doppelgangers and entities right in your browser with zero download."><meta name="theme-color" content="#ff2a6d"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://jeep-horror.github.io/"><meta property="og:title" content="JEEP HORROR - Play Online, Survival Walkthrough &amp; Wiki"><meta property="og:description" content="Play JEEP HORROR online for free! Drive through the midnight graveyard shift, calculate fare change, and survive terrifying doppelgangers and entities right in your browser with zero download."><meta property="og:image" content="https://jeep-horror.github.io/images/games/jeep-horror/thumbnail.jpg"><meta property="og:site_name" content="JEEP HORROR"><meta property="og:locale" content="en"><meta property="og:locale:alternate" content="tl"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://jeep-horror.github.io/"><meta property="twitter:title" content="JEEP HORROR - Play Online, Survival Walkthrough &amp; Wiki"><meta property="twitter:description" content="Play JEEP HORROR online for free! Drive through the midnight graveyard shift, calculate fare change, and survive terrifying doppelgangers and entities right in your browser with zero download."><meta property="twitter:image" content="https://jeep-horror.github.io/images/games/jeep-horror/thumbnail.jpg"><!-- Structured Data --><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"JEEP HORROR - Play Free Online Indie Horror Game","description":"Play JEEP HORROR online for free! Drive through the midnight graveyard shift, calculate fare change, and survive terrifying doppelgangers and entities right in your browser with zero download.","image":"https://jeep-horror.github.io/images/games/jeep-horror/thumbnail.jpg","playMode":"SinglePlayer","applicationCategory":"Game","operatingSystem":"Any","genre":"Horror Games","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","ratingCount":"227","bestRating":"5","worstRating":"1"}}</script><!-- Google Consent Mode v2 (仅在开启商业化 AdSense 或 GA4 统计时注入) --><script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+  </script><!-- Google AdSense Integration --><!-- Google Analytics 4 (GA4) Integration --><script async src="https://www.googletagmanager.com/gtag/js?id=G-DFVEVZ85KS"></script><script>(function(){const gaId = "G-DFVEVZ85KS";
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="JEEP HORROR - Maglaro Online sa Browser">
-  <meta name="twitter:description" content="May mga pasaherong hindi tao. Mag-ingat sa huling biyahe ng gabi.">
-  <meta name="twitter:image" content="https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/508x254%23mb/HEQwuE.jpg">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId);
+    })();</script><script>
+      // 优先从 localStorage 提取主题，默认使用浅色模式
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches && savedTheme !== 'light')) {
+        // 如果用户主动设置过 dark，则保留
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script><link rel="stylesheet" href="/_astro/Layout.ZkSU-QAN.css"><style>#game-player-root.web-fullscreen{z-index:99999!important;background:#000!important;border-radius:0!important;width:100vw!important;max-width:none!important;height:100vh!important;margin:0!important;position:fixed!important;inset:0!important}#game-player-root.web-fullscreen .game-viewport{aspect-ratio:unset!important;border:none!important;border-radius:0!important;height:calc(100vh - 44px)!important}.custom-scrollbar[data-astro-cid-75uyrz4v]::-webkit-scrollbar{width:6px}.custom-scrollbar[data-astro-cid-75uyrz4v]::-webkit-scrollbar-track{background:0 0}.custom-scrollbar[data-astro-cid-75uyrz4v]::-webkit-scrollbar-thumb{background:#d4d4d8;border-radius:99px}.dark[data-astro-cid-75uyrz4v] .custom-scrollbar[data-astro-cid-75uyrz4v]::-webkit-scrollbar-thumb{background:#27272a}
+</style></head><body class="min-h-screen bg-[#f8f9fa] dark:bg-neutral-950 text-neutral-800 dark:text-neutral-100 antialiased selection:bg-amber-400 selection:text-neutral-950 flex flex-col font-sans transition-colors duration-200"><!-- 顶部导航 --><header class="sticky top-0 z-50 bg-white/95 dark:bg-neutral-950/90 backdrop-blur-md border-b border-neutral-200/80 dark:border-neutral-800 transition-colors duration-200 shadow-xs"><div class="max-w-[1600px] mx-auto px-4 md:px-6 h-16 flex items-center justify-between gap-4"><!-- Logo (彩色积木块面字标，高度对齐截图) --><a href="/" class="flex items-center gap-2 flex-shrink-0 group select-none"><div class="flex items-center text-2xl sm:text-3xl font-black tracking-tight font-sans"><span class="bg-gradient-to-r from-amber-500 via-orange-500 to-pink-500 bg-clip-text text-transparent group-hover:opacity-90 transition-opacity">JEEP</span><span class="text-rose-500 ml-1.5 drop-shadow-xs group-hover:scale-105 transition-transform inline-block">HORROR</span></div></a><!-- 即时搜索框 (Center Pill-shaped 胶囊长框) --><div class="relative flex-grow max-w-lg hidden sm:block"><div class="relative"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-search absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400 pointer-events-none"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg><input type="text" id="search-input" placeholder="Search games..." data-games="[{&quot;title&quot;:&quot;JEEP HORROR - Play Free Online Indie Horror Game&quot;,&quot;slug&quot;:&quot;index&quot;,&quot;url&quot;:&quot;/&quot;,&quot;thumbnail&quot;:&quot;/images/games/jeep-horror/thumbnail.jpg&quot;,&quot;category&quot;:&quot;Horror Games&quot;},{&quot;title&quot;:&quot;JEEP HORROR - Play Online Free&quot;,&quot;slug&quot;:&quot;jeep-horror&quot;,&quot;url&quot;:&quot;/game/jeep-horror&quot;,&quot;thumbnail&quot;:&quot;/images/games/jeep-horror/thumbnail.jpg&quot;,&quot;category&quot;:&quot;Horror Games&quot;}]" data-no-results="No games found" class="w-full pl-11 pr-4 py-2 text-sm bg-neutral-100/80 dark:bg-neutral-900 border border-neutral-200/70 dark:border-neutral-800 rounded-full focus:outline-hidden focus:ring-2 focus:ring-amber-500 focus:bg-white dark:focus:bg-neutral-900 text-neutral-900 dark:text-white placeholder-neutral-400 transition-all shadow-inner/10"></div><!-- 搜索下拉结果浮层 --><div id="search-results" class="hidden absolute top-full left-0 right-0 mt-2 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl shadow-xl overflow-hidden z-50 max-h-80 overflow-y-auto"></div></div><!-- 右侧操作区：语言切换器与深浅色切换开关 --><div class="flex items-center gap-2 sm:gap-3"><!-- 语言切换器 (Starwind UI Dropdown) --><div class="relative inline-block text-left"><div data-sw-menu data-modal="false" data-close-delay="200" data-state="closed" class="relative" align="end" data-slot="dropdown"><button type="button" data-sw-menu-trigger aria-haspopup="menu" aria-expanded="false" data-state="closed" class="justify-center focus-visible:ring-outline/50 outline-none focus-visible:ring-3 disabled:pointer-events-none inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-700 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-colors cursor-pointer shadow-xs focus:outline-hidden focus:ring-2 focus:ring-amber-500" aria-label="Select language" title="Select language" data-slot="dropdown-trigger"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-globe w-3.5 h-3.5 text-neutral-500 dark:text-neutral-400"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg><span class="font-semibold text-neutral-800 dark:text-neutral-100">EN</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-chevron-down w-3 h-3 text-neutral-400 opacity-70"><path d="m6 9 6 6 6-6"></path></svg></button><div data-sw-menu-portal data-sw-portal-placement="runtime" data-placement="pending" data-slot="dropdown-portal"><div data-sw-menu-popup role="menu" tabindex="-1" data-state="closed" data-side="bottom" data-align="end" data-side-offset="4" data-avoid-collisions="true" hidden class="text-popover-foreground p-1 data-[state=open]:animate-in fade-in zoom-in-95 outline-none data-[state=closed]:animate-out data-[state=closed]:fill-mode-forwards fade-out zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=bottom]:slide-out-to-top-2 data-[side=top]:slide-in-from-bottom-2 data-[side=top]:slide-out-to-bottom-2 data-[side=right]:slide-in-from-left-2 data-[side=right]:slide-out-to-left-2 data-[side=left]:slide-in-from-right-2 data-[side=left]:slide-out-to-right-2 origin-(--transform-origin) pointer-events-auto fixed isolate will-change-transform min-w-[9rem] py-1 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl shadow-lg z-50 overflow-hidden" data-slot="dropdown-content"><a data-sw-menu-link-item href="/" role="menuitem" tabindex="0" data-close-on-click="true" class="data-highlighted:bg-accent data-highlighted:text-accent-foreground focus:bg-accent focus:text-accent-foreground hover:bg-accent hover:text-accent-foreground relative gap-2 rounded-sm data-disabled:pointer-events-none data-disabled:opacity-50 group/dropdown-item [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 flex items-center justify-between px-3 py-2 text-xs transition-colors cursor-pointer outline-hidden select-none font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400" data-slot="dropdown-link-item"><span class="flex items-center gap-1.5"><span class="uppercase font-mono text-[10px] px-1 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">en</span><span>English</span></span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-check w-3.5 h-3.5 text-amber-500"><path d="M20 6 9 17l-5-5"></path></svg></a><a data-sw-menu-link-item href="/tl" role="menuitem" tabindex="0" data-close-on-click="true" class="data-highlighted:bg-accent data-highlighted:text-accent-foreground focus:text-accent-foreground hover:text-accent-foreground relative gap-2 rounded-sm data-disabled:pointer-events-none data-disabled:opacity-50 group/dropdown-item [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 flex items-center justify-between px-3 py-2 text-xs transition-colors cursor-pointer outline-hidden select-none text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:bg-neutral-100 dark:focus:bg-neutral-800" data-slot="dropdown-link-item"><span class="flex items-center gap-1.5"><span class="uppercase font-mono text-[10px] px-1 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">tl</span><span>Tagalog</span></span></a></div></div></div><script type="module" src="/_astro/MenuRoot.astro_astro_type_script_index_0_lang.CRNbUg5F.js"></script></div><!-- 主题切换切换开关 (Moon / Sun Toggle Pill) --><button id="theme-toggle-btn" type="button" class="relative flex items-center justify-between w-14 h-8 p-1 rounded-full bg-neutral-200 dark:bg-neutral-800 cursor-pointer border border-neutral-300/80 dark:border-neutral-700 transition-colors shadow-inner shrink-0" aria-label="Toggle Theme" title="Toggle Theme"><!-- 月亮图标 (暗色) --><span class="w-6 h-6 flex items-center justify-center text-xs text-neutral-500 dark:text-amber-400 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-moon w-3.5 h-3.5"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span><!-- 太阳图标 (亮色) --><span class="w-6 h-6 flex items-center justify-center text-xs text-amber-500 dark:text-neutral-500 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-sun w-3.5 h-3.5"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span><!-- 滑块圆珠 --><div id="theme-thumb" class="absolute left-1 top-1 w-6 h-6 rounded-full bg-white dark:bg-neutral-900 shadow-md transform transition-transform duration-200 dark:translate-x-6 flex items-center justify-center pointer-events-none"><div class="w-2 h-2 rounded-full bg-amber-400"></div></div></button></div></div></header><script type="module">var e=document.getElementById(`search-input`),t=document.getElementById(`search-results`);if(e&&t){let n=JSON.parse(e.dataset.games||`[]`);e.addEventListener(`input`,r=>{let i=r.target.value.trim().toLowerCase();if(!i){t.classList.add(`hidden`),t.innerHTML=``;return}let a=n.filter(e=>e.title.toLowerCase().includes(i)||e.category&&e.category.toLowerCase().includes(i)).slice(0,6);t.innerHTML=a.length===0?`<div class="p-4 text-xs text-neutral-500 dark:text-neutral-400 text-center">${e.dataset.noResults||`No games found`}</div>`:a.map(e=>`
+          <a href="${e.url||`/game/${e.slug}`}" class="flex items-center gap-3 p-3 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition border-b border-neutral-100 dark:border-neutral-800 last:border-0">
+            <img src="${e.thumbnail}" alt="${e.title}" class="w-10 h-10 object-cover rounded-lg bg-neutral-200 dark:bg-neutral-950 flex-shrink-0" />
+            <div class="min-w-0">
+              <div class="text-sm font-bold text-neutral-800 dark:text-white truncate">${e.title}</div>
+              <div class="text-xs text-amber-500 dark:text-amber-400">${e.category}</div>
+            </div>
+          </a>
+        `).join(``),t.classList.remove(`hidden`)}),document.addEventListener(`click`,n=>{!e.contains(n.target)&&!t.contains(n.target)&&t.classList.add(`hidden`)})}var n=document.getElementById(`theme-toggle-btn`);n&&n.addEventListener(`click`,()=>{let e=document.documentElement.classList.toggle(`dark`);localStorage.setItem(`theme`,e?`dark`:`light`)});</script><!-- 核心内容区 (自适应现代宽屏布局) --><main class="flex-1 w-full max-w-[1600px] mx-auto px-2 sm:px-4 md:px-6 py-4 sm:py-6"><div class="flex flex-col md:flex-row gap-5 lg:gap-6 items-start"><div class="w-full md:w-52 shrink-0 order-2 md:order-1"><aside class="w-full md:w-52 shrink-0 md:sticky md:top-20 self-start space-y-4"><div class="bg-white/80 dark:bg-neutral-900/70 border border-neutral-200/80 dark:border-neutral-800 rounded-2xl p-2.5 shadow-xs backdrop-blur-xs"><!-- 顶部核心导航 (Home, History, Random 对齐截图) --><ul class="space-y-1 text-sm font-medium"><li><a href="/" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition bg-neutral-200/80 dark:bg-neutral-800 text-neutral-950 dark:text-white font-bold shadow-xs"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-house w-4 h-4 text-neutral-700 dark:text-neutral-300"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg><span>Home</span></a></li><li><a href="/#popular-games" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 hover:text-neutral-950 dark:hover:text-white transition"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-history w-4 h-4 text-neutral-500"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M12 7v5l4 2"></path></svg><span>History</span></a></li><li><button id="random-game-btn" type="button" data-slugs="[&quot;jeep-horror&quot;]" data-locale="en" data-default-locale="en" class="w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800/60 hover:text-neutral-950 dark:hover:text-white transition text-left cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-shuffle w-4 h-4 text-neutral-500"><path d="m18 14 4 4-4 4"></path><path d="m18 2 4 4-4 4"></path><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"></path><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"></path><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"></path></svg><span>Random</span></button></li></ul><!-- 分类导航分割线 --><div class="h-px bg-neutral-200/80 dark:border-neutral-800 my-2 mx-1"></div><!-- 游戏分类 (带统一 Gamepad 图标) --><ul class="space-y-1 text-sm font-medium"><li><a href="/games/horror-games" class="flex items-center justify-between px-3 py-2 rounded-xl transition text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 hover:text-neutral-900 dark:hover:text-neutral-100"><div class="flex items-center gap-2.5 truncate"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-gamepad-2 w-4 h-4 text-neutral-400 dark:text-neutral-500 shrink-0"><line x1="6" x2="10" y1="11" y2="11"></line><line x1="8" x2="8" y1="9" y2="13"></line><line x1="15" x2="15.01" y1="12" y2="12"></line><line x1="18" x2="18.01" y1="10" y2="10"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path></svg><span class="truncate">Horror Games</span></div><span class="text-[10px] px-1.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-400">2</span></a></li></ul></div><!-- 信任与免责提示卡片 (替代 emoji 为 ShieldCheck) --><div class="bg-white/60 dark:bg-neutral-900/40 border border-neutral-200/70 dark:border-neutral-800/80 rounded-2xl p-3.5 text-xs text-neutral-500 dark:text-neutral-400 space-y-1.5 hidden md:block"><div class="font-bold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-shield-check w-4 h-4 text-emerald-500"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg><span>100% Free &amp; Safe</span></div><p class="leading-relaxed text-[11px]">Instant play in browser with zero downloads required on desktop &amp; mobile.</p></div></aside><script type="module">var e=document.getElementById(`random-game-btn`);e&&e.addEventListener(`click`,()=>{let t=JSON.parse(e.dataset.slugs||`[]`),n=e.dataset.locale||``,r=e.dataset.defaultLocale||`en`,i=!n||n===r?``:`/${n}`;if(t.length>0){let e=t[Math.floor(Math.random()*t.length)];window.location.href=`${i}/game/${e}`}else window.location.href=`${i||`/`}`});</script></div><div class="flex-1 w-full min-w-0 space-y-6 sm:space-y-8 order-1 md:order-2"><!-- 1. 舞台区：左右摩天楼对称广告 + 中间主打游戏门面卡片 --><section class="flex items-center justify-center gap-4"><div class="flex-1 min-w-0"><div class="relative w-full rounded-3xl overflow-hidden transition-all duration-200" id="game-player-root" data-astro-cid-uln7b5jv><!-- Player Viewport Container --><div class="game-viewport relative w-full aspect-16/10 sm:aspect-16/9 bg-neutral-900 rounded-2xl overflow-hidden shadow-md border border-neutral-200/80 dark:border-neutral-800" data-astro-cid-uln7b5jv><!-- Facade Poster Card (Performance-first deferred loading) --><div id="game-poster" class="absolute inset-0 z-10 flex flex-col md:flex-row items-center justify-between p-6 sm:p-8 md:p-10 bg-[#FAF7EE] dark:bg-[#18181b] transition-all duration-300 overflow-hidden" data-astro-cid-uln7b5jv><!-- Subtle Background Texture --><div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px]" data-astro-cid-uln7b5jv></div><!-- Left Column: Thumbnail --><div class="w-full md:w-5/12 h-48 sm:h-64 md:h-full relative shrink-0 flex items-center justify-center" data-astro-cid-uln7b5jv><div class="relative w-full h-full max-w-[280px] md:max-w-none rounded-2xl overflow-hidden shadow-lg border border-amber-200/60 dark:border-neutral-700/60 group" data-astro-cid-uln7b5jv><img src="/images/games/jeep-horror/thumbnail.jpg" alt="JEEP HORROR - Play Free Online Indie Horror Game" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-astro-cid-uln7b5jv><div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" data-astro-cid-uln7b5jv></div><span class="absolute bottom-3 left-3 text-xs font-bold text-white px-2.5 py-1 rounded-md bg-black/40 backdrop-blur-xs" data-astro-cid-uln7b5jv>Free Online</span></div></div><!-- Right Column: Game Info & CTA --><div class="w-full md:w-7/12 md:pl-10 flex flex-col justify-center items-start text-left mt-4 md:mt-0 relative z-20" data-astro-cid-uln7b5jv><!-- Top Badge --><span class="text-[11px] font-extrabold tracking-widest text-[#B58B54] dark:text-amber-400/90 uppercase mb-1" data-astro-cid-uln7b5jv>NOW PLAYING</span><!-- Status Pills (Ready + Plays) --><div class="flex items-center flex-wrap gap-2 mb-3" data-astro-cid-uln7b5jv><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-400 text-xs font-bold shadow-2xs" data-astro-cid-uln7b5jv><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" data-astro-cid-uln7b5jv></span><span data-astro-cid-uln7b5jv>READY TO PLAY</span></div><div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs font-bold shadow-2xs" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-uln7b5jv="true" class="lucide lucide-flame w-3.5 h-3.5 fill-current text-amber-500"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path></svg><span id="facade-plays-count" data-astro-cid-uln7b5jv>12.8K Plays</span></div></div><!-- Title --><h1 class="text-2xl sm:text-3xl md:text-4xl font-black text-[#1E293B] dark:text-white tracking-tight leading-tight mb-2" data-astro-cid-uln7b5jv>JEEP HORROR - Play Free Online Indie Horror Game <span class="font-normal text-neutral-400 dark:text-neutral-500 text-lg sm:text-xl md:text-2xl" data-astro-cid-uln7b5jv>• Horror Games</span></h1><!-- Description --><p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 line-clamp-2 sm:line-clamp-3 mb-6 max-w-xl leading-relaxed" data-astro-cid-uln7b5jv>Play JEEP HORROR online for free! Drive through the midnight graveyard shift, calculate fare change, and survive terrifying doppelgangers and entities right in your browser with zero download.</p><!-- CTA Play Button --><div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full" data-astro-cid-uln7b5jv><button id="play-game-btn" type="button" class="inline-flex items-center justify-center gap-3 px-8 py-3.5 bg-gradient-to-r from-[#FF5233] to-[#F04423] hover:from-[#ff6247] hover:to-[#ff3814] text-white font-black text-lg rounded-full shadow-lg hover:shadow-xl hover:shadow-orange-500/25 active:scale-95 transition-all cursor-pointer group" aria-label="Play JEEP HORROR - Play Free Online Indie Horror Game now" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-uln7b5jv="true" class="lucide lucide-play w-6 h-6 fill-current transition-transform group-hover:scale-110"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg><span data-astro-cid-uln7b5jv>Play game</span></button><!-- Prompt Note --><div class="flex items-center gap-1.5 text-xs text-neutral-500 dark:text-neutral-400 font-medium" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-uln7b5jv="true" class="lucide lucide-video w-3.5 h-3.5 text-neutral-400"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg><span class="tracking-wide" data-astro-cid-uln7b5jv>WATCH AD TO PLAY</span></div></div></div></div><!-- Active Game Iframe Container --><div id="game-frame-container" class="w-full h-full hidden bg-black" data-astro-cid-uln7b5jv><!-- Injected iframe --></div></div><!-- Bottom Interactive Bar --><div class="flex items-center justify-between px-3 py-2.5 mt-2 bg-transparent text-neutral-700 dark:text-neutral-300 text-sm" data-astro-cid-uln7b5jv><div class="flex items-center gap-2" data-astro-cid-uln7b5jv><span class="font-bold text-neutral-900 dark:text-white truncate max-w-[160px] sm:max-w-xs" data-astro-cid-uln7b5jv>JEEP HORROR - Play Free Online Indie Horror Game</span></div><div class="flex items-center gap-2 sm:gap-3 text-neutral-500 dark:text-neutral-400" data-astro-cid-uln7b5jv><!-- Like Button --><button id="like-game-btn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 transition-all cursor-pointer text-xs font-semibold" title="Like this game" aria-label="Like this game" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" id="like-icon" data-astro-cid-uln7b5jv="true" class="lucide lucide-thumbs-up w-3.5 h-3.5"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path></svg><span id="like-count" data-astro-cid-uln7b5jv>560</span></button><!-- Share Button --><button id="share-game-btn" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-amber-500 hover:text-amber-600 dark:hover:text-amber-400 transition-all cursor-pointer text-xs font-semibold" title="Share Game" aria-label="Share Game" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-uln7b5jv="true" class="lucide lucide-share-2 w-3.5 h-3.5"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg><span id="share-count" data-astro-cid-uln7b5jv>88</span></button><!-- Reload Button --><button id="reload-game-btn" class="p-1.5 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer" title="Reload Game" aria-label="Reload Game" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-uln7b5jv="true" class="lucide lucide-rotate-cw w-4 h-4"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg></button><!-- Fullscreen Button --><button id="fullscreen-game-btn" class="p-1.5 hover:text-neutral-900 dark:hover:text-white transition-colors cursor-pointer" title="Toggle Fullscreen" aria-label="Toggle Fullscreen" data-astro-cid-uln7b5jv><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-uln7b5jv="true" class="lucide lucide-maximize w-4 h-4"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg></button></div></div></div><script>(function(){const iframeUrl = "https://html-classic.itch.zone/html/18290226/index.html?v=1783773836";
+const title = "JEEP HORROR - Play Free Online Indie Horror Game";
+const gameId = "index";
+const initialLikes = 560;
+const initialShares = 88;
 
-  <!-- Canonical & Hreflang -->
-  <link rel="canonical" href="https://jeep-horror.github.io/">
-  <link rel="alternate" hreflang="tl" href="https://jeep-horror.github.io/">
-  <link rel="alternate" hreflang="fil-PH" href="https://jeep-horror.github.io/">
-  <link rel="alternate" hreflang="en" href="https://jeep-horror.github.io/en/">
-  <link rel="alternate" hreflang="x-default" href="https://jeep-horror.github.io/">
+  const playBtn = document.getElementById('play-game-btn');
+  const poster = document.getElementById('game-poster');
+  const frameContainer = document.getElementById('game-frame-container');
+  const reloadBtn = document.getElementById('reload-game-btn');
+  const fullscreenBtn = document.getElementById('fullscreen-game-btn');
+  const shareBtn = document.getElementById('share-game-btn');
+  const likeBtn = document.getElementById('like-game-btn');
+  const likeIcon = document.getElementById('like-icon');
+  const likeCountEl = document.getElementById('like-count');
+  const shareCountEl = document.getElementById('share-count');
+  const playerRoot = document.getElementById('game-player-root');
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/css/style.css">
+  const LIKE_STORAGE_KEY = `liked_${gameId}`;
 
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "JEEP HORROR",
-    "description": "Drive your traditional Philippine jeepney during the graveyard shift while managing fares and identifying terrifying supernatural anomalies disguised as commuters.",
-    "genre": ["Survival Horror", "Psychological Horror", "Simulation"],
-    "gamePlatform": ["Web Browser", "Windows PC", "Android", "Linux", "macOS"],
-    "operatingSystem": "Any HTML5 Browser",
-    "applicationCategory": "Game",
-    "author": {
-      "@type": "Organization",
-      "name": "Neuroticfly Games",
-      "url": "https://neuroticfly.itch.io"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "ratingCount": "26",
-      "bestRating": "5"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
+  // Check if already liked locally
+  if (localStorage.getItem(LIKE_STORAGE_KEY)) {
+    markLikedActive();
+  }
+
+  function markLikedActive() {
+    likeBtn?.classList.add('text-amber-500', 'border-amber-500', 'bg-amber-500/10');
+    likeIcon?.classList.add('fill-current');
+  }
+
+  function loadGame() {
+    if (!frameContainer || !poster) return;
+    poster.classList.add('opacity-0', 'pointer-events-none');
+    setTimeout(() => {
+      poster.style.display = 'none';
+      frameContainer.classList.remove('hidden');
+      frameContainer.innerHTML = `
+        <iframe 
+          id="active-game-iframe"
+          src="${iframeUrl}" 
+          title="${title}" 
+          class="w-full h-full border-0" 
+          allow="autoplay; fullscreen; keyboard-map *" 
+          loading="eager"
+        ></iframe>
+      `;
+    }, 200);
+
+    // Trigger GA4 game_play event
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'game_play', {
+        game_id: gameId,
+        game_title: title
+      });
     }
   }
-  </script>
-  <!-- Google Analytics 4 & Consent Mode v2 -->
-  <script src="/js/consent.js"></script>
-</head>
-<body>
 
-  <!-- Site Navigation -->
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a href="/" class="logo">
-        <div class="logo-icon">🛺</div>
-        <span>JEEP</span> HORROR
-      </a>
-      <ul class="nav-links">
-        <li><a href="#play" class="active">Maglaro</a></li>
-        <li><a href="#features">Mga Katangian</a></li>
-        <li><a href="#video">Gameplay</a></li>
-        <li><a href="/blog/">Mga Gabay</a></li>
-        <li><a href="#comments">Komento</a></li>
-      </ul>
-      <div class="lang-switch">
-        <a href="/" class="active">Tagalog</a>
-        <a href="/en/">English</a>
-      </div>
-    </div>
-  </header>
+  playBtn?.addEventListener('click', loadGame);
 
-  <main>
-    <!-- Hero Header -->
-    <section class="hero">
-      <div class="container">
-        <span class="hero-tagline">🌙 Viral Jeepney Horror Story Game • Huling Biyahe sa Hatinggabi</span>
-        <h1 class="hero-title">JEEP HORROR: Magmaneho sa <span class="highlight">Dilim ng Maynila</span></h1>
-        <p class="hero-desc">
-          Ang trending na <strong>jeepney horror story game</strong> kung saan susubukin ang iyong tapang sa graveyard shift. Kolektahin ang pamasahe, magsukli gamit ang kalkulador, ngunit higit sa lahat — <strong>huwag magtiwala sa lahat ng sumasakay sa likod mo</strong>.
-        </p>
-      </div>
-    </section>
+  reloadBtn?.addEventListener('click', () => {
+    const iframe = document.getElementById('active-game-iframe');
+    if (iframe) {
+      iframe.src = iframeUrl;
+    } else {
+      loadGame();
+    }
+  });
 
-    <!-- Playable Stage Container (Lazy Loaded Iframe) -->
-    <section id="play" class="container">
-      <div id="game-stage-wrapper" class="game-stage-wrapper">
-        <div class="game-stage-header">
-          <div class="game-stage-info">
-            <span class="status-dot"></span>
-            <span>Godot HTML5 Engine • Libreng Laruin sa Browser</span>
-          </div>
-          <div class="game-actions">
-            <button id="reload-btn" class="btn-ctrl" title="I-reload ang laro">🔄 I-reset</button>
-            <button id="fullscreen-btn" class="btn-ctrl" title="Buong Screen">⛶ Fullscreen</button>
-          </div>
-        </div>
+  // Like interaction (optimistic +1)
+  likeBtn?.addEventListener('click', () => {
+    if (localStorage.getItem(LIKE_STORAGE_KEY)) {
+      alert('You have already liked this game! Thank you for your support.');
+      return;
+    }
 
-        <div id="game-viewport" class="game-viewport">
-          <!-- Placeholder with Start Button to prevent blocking page render -->
-          <div id="game-placeholder" class="game-placeholder" style="background-image: url('https://img.itch.zone/aW1nLzI4MjgxNjY5LmpwZw==/original/zjrvG6.jpg');">
-            <div class="game-placeholder-content">
-              <h3>JEEP HORROR: Pasada sa Hatinggabi</h3>
-              <p>Handa ka na bang sumabak sa ruta kung saan nagkukubli ang mga Doppelganger at Paring Pugot?</p>
-              <button id="play-game-btn" class="btn-play">
-                ▶ Simulan ang Pasada (Play Now)
-              </button>
+    localStorage.setItem(LIKE_STORAGE_KEY, 'true');
+    markLikedActive();
+
+    if (likeCountEl) {
+      const current = parseInt(likeCountEl.textContent.replace(/[^0-9]/g, '') || initialLikes.toString(), 10);
+      likeCountEl.textContent = (current + 1).toLocaleString();
+    }
+
+    // Trigger GA4 game_like event
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'game_like', {
+        game_id: gameId,
+        game_title: title
+      });
+    }
+  });
+
+  // Share feature
+  shareBtn?.addEventListener('click', () => {
+    const currentUrl = window.location.href;
+    const shareData = { title: title, url: currentUrl };
+
+    const updateShareCount = () => {
+      if (shareCountEl) {
+        const current = parseInt(shareCountEl.textContent.replace(/[^0-9]/g, '') || initialShares.toString(), 10);
+        shareCountEl.textContent = (current + 1).toLocaleString();
+      }
+    };
+
+    if (navigator.share) {
+      navigator.share(shareData)
+        .then(() => {
+          updateShareCount();
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'game_share', { game_id: gameId, channel: 'native_share' });
+          }
+        })
+        .catch(() => {});
+    } else {
+      navigator.clipboard.writeText(currentUrl).then(() => {
+        alert('Game link copied to clipboard! Share it with your friends.');
+        updateShareCount();
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'game_share', { game_id: gameId, channel: 'clipboard' });
+        }
+      });
+    }
+  });
+
+  // Fullscreen feature
+  fullscreenBtn?.addEventListener('click', () => {
+    const isWebFs = playerRoot?.classList.contains('web-fullscreen');
+    const isDocFs = Boolean(document.fullscreenElement);
+
+    if (isDocFs) {
+      document.exitFullscreen?.().catch(() => {});
+      return;
+    }
+
+    if (isWebFs) {
+      playerRoot?.classList.remove('web-fullscreen');
+      return;
+    }
+
+    if (playerRoot?.requestFullscreen) {
+      playerRoot.requestFullscreen().catch(() => {
+        playerRoot?.classList.add('web-fullscreen');
+      });
+    } else {
+      playerRoot?.classList.add('web-fullscreen');
+    }
+  });
+
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+      playerRoot?.classList.remove('web-fullscreen');
+    }
+  });
+})();</script></div></section><!-- 2. 播放器正下方横向广告位 (AdSense / Adsterra) --><section class="py-1"></section><!-- 3. 热门推荐游戏流 (两组 1大 + 4小，最多展示 10 款游戏) --><section id="popular-games" class="space-y-4 sm:space-y-6"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-orange-500/10 dark:bg-orange-500/20 flex items-center justify-center text-orange-500"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></div><h2 class="text-lg sm:text-xl font-black tracking-tight text-neutral-900 dark:text-white">Popular Games</h2></div><span class="text-xs text-neutral-500 dark:text-neutral-400 font-medium">Free Online</span></div><div class="grid gap-4 sm:gap-5 items-stretch grid-cols-1"><div class="grid gap-3 sm:gap-3.5 items-stretch grid-cols-1 max-w-md"><div class="h-full min-h-[220px] sm:min-h-0"><a href="/game/jeep-horror" class="group relative flex flex-col justify-end bg-neutral-900 rounded-2xl sm:rounded-3xl overflow-hidden border border-neutral-200/80 dark:border-neutral-800 hover:border-amber-400 dark:hover:border-amber-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-neutral-300/40 dark:hover:shadow-black/60 h-full min-h-[200px] sm:min-h-[260px]"><!-- 全景背景封面图 --><img src="/images/games/jeep-horror/thumbnail.jpg" alt="JEEP HORROR - Play Online Free" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"><!-- 多层渐变暗色遮罩保障文字与按钮对比度 --><div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-neutral-950/10 group-hover:via-neutral-950/30 transition-colors"></div><!-- 左上角大号角标 --><div class="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 px-2.5 py-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-xs font-black tracking-wide flex items-center gap-1 shadow-md uppercase"><span>HOT</span><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-flame w-3.5 h-3.5 fill-current text-amber-200"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path></svg></div><!-- 悬停/常显 Play 按钮 --><div class="absolute inset-0 flex items-center justify-center pointer-events-none"><div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/95 text-neutral-900 flex items-center justify-center shadow-xl shadow-black/40 transform group-hover:scale-110 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-play w-5 h-5 sm:w-6 sm:h-6 fill-current ml-0.5 text-rose-500"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><!-- 底部卡片信息 --><div class="relative z-10 p-3.5 sm:p-5 flex flex-col justify-end gap-1 sm:gap-2"><div class="flex items-center gap-2 text-xs font-semibold text-amber-400"><span class="px-2 py-0.5 rounded-md bg-amber-500/20 backdrop-blur-xs uppercase text-[10px] tracking-wider font-bold">Horror Games</span><span class="flex items-center gap-1 text-neutral-300 text-[11px]"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-flame w-3.5 h-3.5 text-amber-400 fill-current"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path></svg>120 plays</span></div><h3 class="font-black text-white text-base sm:text-xl leading-tight line-clamp-2 group-hover:text-amber-300 transition-colors drop-shadow-sm">JEEP HORROR - Play Online Free</h3></div></a></div></div></div></section><!-- 4. Wiki 攻略 Tabs (如果有攻略指南) --><section class="space-y-3"><div class="border-b border-neutral-200/80 dark:border-neutral-800 mb-6"><nav class="flex items-center gap-2 overflow-x-auto pb-px scrollbar-none" aria-label="Wiki Guides"><!-- 游戏主页 / Play Tab --><a href="/" class="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all whitespace-nowrap rounded-t-xl border-amber-500 text-amber-600 dark:text-amber-400 bg-amber-500/10 font-bold"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-gamepad-2 w-4 h-4"><line x1="6" x2="10" y1="11" y2="11"></line><line x1="8" x2="8" y1="9" y2="13"></line><line x1="15" x2="15.01" y1="12" y2="12"></line><line x1="18" x2="18.01" y1="10" y2="10"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path></svg><span>Play & Overview</span></a><!-- Wiki 子页面 Tabs --><a href="/game/index/guide" class="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold border-b-2 transition-all whitespace-nowrap rounded-t-xl border-transparent text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:border-neutral-300 dark:hover:border-neutral-700"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-book-open w-4 h-4"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg><span>JEEP HORROR Complete Survival Guide, Fare Mechanics &amp; Entity Lore</span></a></nav></div></section><!-- 5. 深度 SEO 文章与游戏介绍 (适配深浅双色，保持 E-E-A-T 权重) --><section class="bg-white dark:bg-neutral-900/60 border border-neutral-200/80 dark:border-neutral-800 rounded-3xl p-6 sm:p-8 shadow-xs"><article class="prose max-w-none"><h3 id="play-jeep-horror-free-online-instantly">Play JEEP HORROR Free Online Instantly</h3>
+<p>Welcome to the official online destination for <strong>JEEP HORROR</strong>. Experience the viral psychological horror simulation directly in your modern web browser with zero downloads, zero registration, and zero delay.</p>
+<p>Take the driver’s seat of an authentic night-shift public jeepney. Drive through gloomy streets, pick up late-night commuters, calculate their fares, and stay vigilant—supernatural doppelgangers are waiting for the right moment to strike.</p>
+<hr/>
+<h3 id="highlights-of-jeep-horror">Highlights of JEEP HORROR</h3>
+<ul>
+<li><strong>Instant Browser Play</strong>: High-performance Godot WebAssembly client loads smoothly on desktop and mobile browsers.</li>
+<li><strong>Deep Psychological Atmosphere</strong>: Authentic street audio, ambient radio static, and heart-pounding passenger encounters.</li>
+<li><strong>Comprehensive Survival Guides</strong>: Dive into our dedicated <a href="/game/jeep-horror/guide">JEEP HORROR Survival Wiki Guide</a> to master fare calculations, entity identification, and all secret endings.</li>
+</ul></article></section><!-- 6. 评论与互动反馈区 --><section><div class="mt-8 bg-white dark:bg-neutral-900/60 border border-neutral-200/80 dark:border-neutral-800 p-6 md:p-8 rounded-3xl shadow-xs transition-colors" data-comment-section data-astro-cid-75uyrz4v><div class="flex items-center justify-between border-b border-neutral-200/80 dark:border-neutral-800 pb-4 mb-6" data-astro-cid-75uyrz4v><div class="flex items-center gap-2.5" data-astro-cid-75uyrz4v><div class="w-8 h-8 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500" data-astro-cid-75uyrz4v><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-75uyrz4v="true" class="lucide lucide-message-square w-4 h-4 fill-current"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg></div><h3 class="text-lg sm:text-xl font-black tracking-tight text-neutral-900 dark:text-white" data-astro-cid-75uyrz4v>Player Reviews (<span id="reviews-count" data-astro-cid-75uyrz4v>0</span>)</h3></div><span class="text-xs text-neutral-500 dark:text-neutral-400 font-medium" data-astro-cid-75uyrz4v>Verified Feedback</span></div><!-- 待审与未通过评论动态容器（由客户端 LocalStorage 水合插入，常驻置顶） --><div id="local-status-container" class="space-y-3 mb-4 hidden" data-astro-cid-75uyrz4v></div><!-- 静态评论列表渲染容器 --><div id="comments-list-container" class="space-y-3.5 max-h-[520px] overflow-y-auto pr-2 mb-4 custom-scrollbar" data-astro-cid-75uyrz4v><div id="empty-state" class="text-center py-8 text-neutral-500 dark:text-neutral-400 text-xs sm:text-sm border border-dashed border-neutral-200 dark:border-neutral-800 rounded-2xl bg-neutral-50/50 dark:bg-neutral-900/30 flex flex-col items-center justify-center gap-2 " data-astro-cid-75uyrz4v><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-75uyrz4v="true" class="lucide lucide-message-square w-6 h-6 text-neutral-400"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg><span data-astro-cid-75uyrz4v>No reviews yet. Be the first player to share your high score and tips below!</span></div><!-- 评论列表项目挂载容器 --><div id="comments-items-wrapper" class="space-y-3.5" data-astro-cid-75uyrz4v></div><!-- 异步加载 Loading 骨架指示器 --><div id="comments-loading-skeleton" class="hidden py-4 text-center" data-astro-cid-75uyrz4v><div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-neutral-100 dark:bg-neutral-800/80 text-xs font-semibold text-neutral-600 dark:text-neutral-300 shadow-xs" data-astro-cid-75uyrz4v><svg class="animate-spin h-3.5 w-3.5 text-amber-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-astro-cid-75uyrz4v><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" data-astro-cid-75uyrz4v></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" data-astro-cid-75uyrz4v></path></svg><span data-astro-cid-75uyrz4v>Loading more reviews...</span></div></div></div><!-- 分页导航控制器（当评论数大于 pageSize 时自动显示） --><div id="comments-pagination" class="flex items-center justify-between border-t border-neutral-200/80 dark:border-neutral-800 pt-3.5 pb-2 mb-6 hidden" data-astro-cid-75uyrz4v><div class="text-xs text-neutral-500 dark:text-neutral-400 font-medium" data-astro-cid-75uyrz4v>Showing <span id="page-item-start" data-astro-cid-75uyrz4v>1</span>-<span id="page-item-end" data-astro-cid-75uyrz4v>0</span> of <span id="page-total-items" data-astro-cid-75uyrz4v>0</span></div><div class="flex items-center gap-1.5" id="pagination-controls" data-astro-cid-75uyrz4v><button type="button" id="btn-prev-page" class="w-7 h-7 flex items-center justify-center rounded-lg border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer" aria-label="Previous Page" data-astro-cid-75uyrz4v><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-75uyrz4v="true" class="lucide lucide-chevron-left w-4 h-4"><path d="m15 18-6-6 6-6"></path></svg></button><!-- 页码数字容器 --><div id="page-numbers-container" class="flex items-center gap-1" data-astro-cid-75uyrz4v></div><button type="button" id="btn-next-page" class="w-7 h-7 flex items-center justify-center rounded-lg border border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer" aria-label="Next Page" data-astro-cid-75uyrz4v><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-75uyrz4v="true" class="lucide lucide-chevron-right w-4 h-4"><path d="m9 18 6-6-6-6"></path></svg></button></div></div><!-- 提交评论表单 --><form id="comment-form" class="space-y-4 border-t border-neutral-200/80 dark:border-neutral-800 pt-6" data-astro-cid-75uyrz4v><div class="flex items-center justify-between" data-astro-cid-75uyrz4v><h4 class="text-sm font-bold text-neutral-900 dark:text-neutral-200" data-astro-cid-75uyrz4v>Leave Your Review</h4><span id="form-msg" class="text-xs hidden font-medium" data-astro-cid-75uyrz4v></span></div><input type="hidden" name="page_key" id="page-key-input" value="/" data-astro-cid-75uyrz4v><!-- 蜜罐字段 (Honeypot) 防自动化刷单 --><div class="hidden" aria-hidden="true" data-astro-cid-75uyrz4v><label data-astro-cid-75uyrz4v>Please leave this field blank:</label><input type="text" name="website_url" tabindex="-1" autocomplete="off" data-astro-cid-75uyrz4v></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-astro-cid-75uyrz4v><div data-astro-cid-75uyrz4v><label class="block text-xs font-semibold text-neutral-600 dark:text-neutral-400 mb-1.5" data-astro-cid-75uyrz4v>Nickname *</label><input type="text" name="nickname" placeholder="e.g. SpeedRunner01" maxlength="40" required class="w-full bg-neutral-50 dark:bg-neutral-950/80 border border-neutral-200 dark:border-neutral-800 focus:border-amber-500 dark:focus:border-amber-400 focus:outline-hidden px-4 py-2.5 rounded-xl text-sm transition text-neutral-900 dark:text-white placeholder:text-neutral-400" data-astro-cid-75uyrz4v></div><div data-astro-cid-75uyrz4v><label class="block text-xs font-semibold text-neutral-600 dark:text-neutral-400 mb-1.5" data-astro-cid-75uyrz4v>Rating</label><select name="rating" class="w-full bg-neutral-50 dark:bg-neutral-950/80 border border-neutral-200 dark:border-neutral-800 focus:border-amber-500 dark:focus:border-amber-400 focus:outline-hidden px-4 py-2.5 rounded-xl text-sm transition text-neutral-900 dark:text-white cursor-pointer" data-astro-cid-75uyrz4v><option value="5" data-astro-cid-75uyrz4v>★★★★★ (5 Stars - Outstanding!)</option><option value="4" data-astro-cid-75uyrz4v>★★★★☆ (4 Stars - Great)</option><option value="3" data-astro-cid-75uyrz4v>★★★☆☆ (3 Stars - Average)</option><option value="2" data-astro-cid-75uyrz4v>★★☆☆☆ (2 Stars - Needs Work)</option><option value="1" data-astro-cid-75uyrz4v>★☆☆☆☆ (1 Star - Bad)</option></select></div></div><!-- 邮箱字段（选填，附带明确提示与长度限制） --><div data-astro-cid-75uyrz4v><div class="flex items-center justify-between mb-1.5" data-astro-cid-75uyrz4v><label class="block text-xs font-semibold text-neutral-600 dark:text-neutral-400" data-astro-cid-75uyrz4v>Email <span class="font-normal text-neutral-400 dark:text-neutral-500" data-astro-cid-75uyrz4v>(Optional)</span></label><span class="text-[11px] text-neutral-400 dark:text-neutral-500 flex items-center gap-1" data-astro-cid-75uyrz4v><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" data-astro-cid-75uyrz4v="true" class="lucide lucide-mail w-3 h-3 inline"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>Leave your email if you'd like us to reply or get in touch.</span></div><input type="email" name="email" placeholder="your.email@mail.com (kept private, will never be published)" maxlength="120" class="w-full bg-neutral-50 dark:bg-neutral-950/80 border border-neutral-200 dark:border-neutral-800 focus:border-amber-500 dark:focus:border-amber-400 focus:outline-hidden px-4 py-2.5 rounded-xl text-sm transition text-neutral-900 dark:text-white placeholder:text-neutral-400" data-astro-cid-75uyrz4v></div><div data-astro-cid-75uyrz4v><label class="block text-xs font-semibold text-neutral-600 dark:text-neutral-400 mb-1.5" data-astro-cid-75uyrz4v>Your Review *</label><textarea name="content" rows="3" maxlength="500" placeholder="Share your high scores, gameplay tips, or feedback (max 500 chars)..." required class="w-full bg-neutral-50 dark:bg-neutral-950/80 border border-neutral-200 dark:border-neutral-800 focus:border-amber-500 dark:focus:border-amber-400 focus:outline-hidden px-4 py-2.5 rounded-xl text-sm transition text-neutral-900 dark:text-white placeholder:text-neutral-400 resize-none" data-astro-cid-75uyrz4v></textarea></div><button type="submit" id="submit-comment-btn" class="w-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 active:scale-[0.99] text-neutral-950 font-bold py-3 px-4 rounded-xl text-sm transition shadow-md shadow-amber-400/10 cursor-pointer disabled:opacity-50 disabled:pointer-events-none" data-astro-cid-75uyrz4v>Post Review</button><p class="text-[11px] text-neutral-400 dark:text-neutral-500 text-center mt-2" data-astro-cid-75uyrz4v>* All reviews are verified and statically synced upon the next automated build.</p></form></div><script>(function(){const apiEndpoint = "https://script.google.com/macros/s/AKfycbxqc9wnjjjyl2umV350M9j4tjilBLADQnM2qgcS_k0FcUuNReTFxfq5P9I3ct0DYdKg8A/exec";
+const serverPageKey = "/";
+const currentDomain = "jeep-horror.github.io";
+const siteIdentifier = "jeep-horror";
+const buildTimestamp = 1791525998037;
+const bakedComments = [];
+const pageSize = 10;
+
+  let clientPageKey = serverPageKey;
+  if (serverPageKey === '/' || (typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === ''))) {
+    clientPageKey = '/';
+  } else if (typeof window !== 'undefined' && window.location && window.location.pathname) {
+    clientPageKey = window.location.pathname;
+  }
+
+  const pageKeyInput = document.getElementById('page-key-input');
+  if (pageKeyInput) pageKeyInput.value = clientPageKey;
+
+  const STORAGE_KEY = `h5_user_reviews_${clientPageKey}`;
+  const PENDING_TTL = 7 * 24 * 60 * 60 * 1000; // 7 天过期自动清理，防止缓存永久堆积
+  const localContainer = document.getElementById('local-status-container');
+  const form = document.getElementById('comment-form');
+  const submitBtn = document.getElementById('submit-comment-btn');
+  const formMsg = document.getElementById('form-msg');
+
+  const CLIENT_AVATAR_COLORS = [
+    'bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/20',
+    'bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20',
+    'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20',
+    'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20',
+    'bg-sky-500/15 text-sky-600 dark:text-sky-400 border border-sky-500/20',
+    'bg-purple-500/15 text-purple-600 dark:text-purple-400 border border-purple-500/20',
+  ];
+
+  function getClientAvatarColor(name) {
+    let h = 0;
+    const s = String(name || '?');
+    for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    return CLIENT_AVATAR_COLORS[h % CLIENT_AVATAR_COLORS.length];
+  }
+
+  function getClientInitial(name) {
+    const s = String(name || '?').trim();
+    return s.replace(/^@/, '').charAt(0).toUpperCase() || '?';
+  }
+
+  // ======================
+  // 1. 评论智能异步分页系统
+  // ======================
+  let currentPage = 1;
+  let totalItems = bakedComments.length;
+  let isLoading = false;
+
+  // 页面数据缓存（第一页默认使用服务端烘焙的数据）
+  const pageDataCache = {
+    1: bakedComments.slice(0, pageSize)
+  };
+
+  const paginationEl = document.getElementById('comments-pagination');
+  const pageStartEl = document.getElementById('page-item-start');
+  const pageEndEl = document.getElementById('page-item-end');
+  const pageTotalEl = document.getElementById('page-total-items');
+  const numbersContainer = document.getElementById('page-numbers-container');
+  const prevBtn = document.getElementById('btn-prev-page');
+  const nextBtn = document.getElementById('btn-next-page');
+  const itemsWrapper = document.getElementById('comments-items-wrapper');
+  const loadingSkeleton = document.getElementById('comments-loading-skeleton');
+  const emptyState = document.getElementById('empty-state');
+  const reviewsCountEl = document.getElementById('reviews-count');
+
+  function escapeHtml(str) {
+    return String(str || '').replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+  }
+
+  function buildCommentCardHtml(comment) {
+    const avColor = getClientAvatarColor(comment.nickname);
+    const avInitial = getClientInitial(comment.nickname);
+    const dateStr = new Date(comment.timestamp || Date.now()).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    
+    let starsHtml = '';
+    const rating = Math.max(1, Math.min(5, Number(comment.rating) || 5));
+    for (let i = 0; i < 5; i++) {
+      const color = i < rating ? 'text-amber-500 fill-amber-500' : 'text-neutral-300 dark:text-neutral-700';
+      starsHtml += `<svg class="w-3.5 h-3.5 inline ${color}" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+    }
+
+    return `
+      <div class="comment-card bg-neutral-50 dark:bg-neutral-950/60 border border-neutral-200/60 dark:border-neutral-800/80 p-4 rounded-2xl relative transition-all" data-comment-id="${escapeHtml(comment.id || '')}">
+        <div class="flex items-center justify-between mb-2.5">
+          <div class="flex items-center gap-2.5">
+            <div class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shrink-0 select-none ${avColor}">
+              ${avInitial}
+            </div>
+            <div class="min-w-0">
+              <span class="font-bold text-neutral-800 dark:text-neutral-200 text-sm truncate block leading-tight">${escapeHtml(comment.nickname)}</span>
+              <span class="text-[10px] text-neutral-400 dark:text-neutral-500 font-medium">${dateStr}</span>
             </div>
           </div>
+          <div class="flex gap-0.5">${starsHtml}</div>
         </div>
-
-        <div class="game-controls-hint">
-          <ul class="key-list">
-            <li><kbd>Mouse Left Click</kbd> Pumili / Makipag-usap</li>
-            <li><kbd>Calculator</kbd> Mag-input ng Pamasahe at Sukli</li>
-            <li><kbd>Rear-view Mirror</kbd> Tingnan ang mga pasahero sa likod</li>
-            <li><kbd>Radio</kbd> I-report ang kahina-hinalang nilalang</li>
-          </ul>
-          <span>Paalala: Gumagana sa PC at Mobile Browser</span>
-        </div>
+        <p class="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed whitespace-pre-wrap pl-9.5">${escapeHtml(comment.content)}</p>
       </div>
-    </section>
+    `;
+  }
 
-    <!-- Quick Overview Features -->
-    <section id="features" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Mekanismo ng Laro</span>
-          <h2 class="section-title">Bakit Nakakakilabot ang Bawat Minuto sa JEEP HORROR?</h2>
-          <p class="section-subtitle">Pagsasama ng makatotohanang buhay-tsuper ng Pilipinas at katatakutang sikolohikal.</p>
+  function renderPage(page, commentsList) {
+    if (!itemsWrapper) return;
+    if (!commentsList || commentsList.length === 0) {
+      itemsWrapper.innerHTML = `
+        <div class="text-center py-8 text-neutral-400 text-xs sm:text-sm border border-dashed border-neutral-200 dark:border-neutral-800 rounded-2xl p-4">
+          No comments on this page.
         </div>
+      `;
+    } else {
+      itemsWrapper.innerHTML = commentsList.map(buildCommentCardHtml).join('');
+    }
+  }
 
-        <div class="grid-3">
-          <div class="card">
-            <div class="card-icon">👥</div>
-            <h3 class="card-title">Mga Doppelganger sa Biyahe</h3>
-            <p class="card-desc">
-              May mga nilalang na gagayahin nang buo ang anyo ng isang pasaherong nakasakay na. Kapag hindi mo napansin ang kaparehong mukha at hinayaan silang makababa, tapos ang iyong biyahe.
-            </p>
-          </div>
+  function updatePaginationUI() {
+    if (!paginationEl) return;
+    const totalPages = Math.ceil(totalItems / pageSize) || 1;
 
-          <div class="card">
-            <div class="card-icon">💰</div>
-            <h3 class="card-title">Kalkulador at Saktong Sukli</h3>
-            <p class="card-desc">
-              "Barya lang po sa umaga!" Hindi madali magsukli habang nagmamaneho sa gabi. Pagsamahin ang mga 1, 5, at 10 pisong barya bago maubos ang pasensya ng mga commuters.
-            </p>
-          </div>
+    if (totalItems <= pageSize) {
+      paginationEl.classList.add('hidden');
+      return;
+    }
+    paginationEl.classList.remove('hidden');
 
-          <div class="card">
-            <div class="card-icon">📻</div>
-            <h3 class="card-title">Monster Book at Radyo</h3>
-            <p class="card-desc">
-              Sumangguni sa gabay ng tsuper upang basahin ang mga babala ukol sa Paring Pugot, White Lady ng Balete Drive, at mga mamamatay-tao sa loob ng jeepney.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    const startIdx = (currentPage - 1) * pageSize;
+    const endIdx = Math.min(startIdx + pageSize, totalItems);
 
-    <!-- Gameplay Video Showcase -->
-    <section id="video" class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Panoorin ang Gameplay</span>
-          <h2 class="section-title">Mga Streamer na Sumabak sa JEEP HORROR Gameplay</h2>
-          <p class="section-subtitle">Tingnan kung paano nakipagbuno ang mga tagahanga sa mga kakaibang pasahero.</p>
-        </div>
+    if (pageStartEl) pageStartEl.textContent = String(startIdx + 1);
+    if (pageEndEl) pageEndEl.textContent = String(endIdx);
+    if (pageTotalEl) pageTotalEl.textContent = String(totalItems);
+    if (reviewsCountEl) reviewsCountEl.textContent = String(totalItems);
 
-        <div class="grid-2">
-          <div>
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube-nocookie.com/embed/zRiFNVovDh8" title="JEEP HORROR Gameplay ni Bobe-wan" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">"So Many Creatures And Monsters Keep Getting On My Bus!"</h3>
-            <p style="color:var(--text-secondary); font-size:0.95rem;">Panoorin ang buong playthrough ni Bobe-wan kung paano kilalanin ang mga bampira at sumakay na kakaibang nilalang.</p>
-          </div>
+    if (prevBtn) prevBtn.disabled = (currentPage === 1 || isLoading);
+    if (nextBtn) nextBtn.disabled = (currentPage === totalPages || isLoading);
 
-          <div>
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube-nocookie.com/embed/ww-2AEGkuT8" title="JEEP HORROR Gameplay ni Fort Kenmei" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">Unang Tikim sa Bagong Philippine Folklore Game</h3>
-            <p style="color:var(--text-secondary); font-size:0.95rem;">Pagsusuri ni Fort Kenmei sa nakapangingilabot na atmosferang binuo ng Neuroticfly Games.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    if (numbersContainer) {
+      let numsHtml = '';
+      for (let p = 1; p <= totalPages; p++) {
+        const isActive = (p === currentPage);
+        const btnClass = isActive 
+          ? 'w-7 h-7 text-xs font-bold rounded-lg bg-amber-500 text-neutral-950 shadow-xs' 
+          : 'w-7 h-7 text-xs font-medium rounded-lg text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 disabled:opacity-40';
+        numsHtml += `<button type="button" class="${btnClass} cursor-pointer" data-go-page="${p}" ${isLoading ? 'disabled' : ''}>${p}</button>`;
+      }
+      numbersContainer.innerHTML = numsHtml;
 
-    <!-- Essential Guides Matrix -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Mga Detalyadong Gabay</span>
-          <h2 class="section-title">Estratehiya at Lihim sa JEEP HORROR Pasada</h2>
-          <p class="section-subtitle">Iwasan ang kamatayan sa pamamagitan ng aming eksklusibong mga gabay.</p>
-        </div>
+      numbersContainer.querySelectorAll('button[data-go-page]').forEach((b) => {
+        b.addEventListener('click', () => {
+          const targetP = parseInt(b.getAttribute('data-go-page') || '1');
+          goToPage(targetP);
+        });
+      });
+    }
+  }
 
-        <div class="grid-2">
-          <article class="blog-card">
-            <div class="blog-card-body">
-              <span class="blog-tag">Gabay sa Survival</span>
-              <h3 class="blog-card-title"><a href="/blog/day-1-walkthrough-guide.html">Gabay sa Day 1: Paano Hindi Agad Mamatay sa Unang Pasada</a></h3>
-              <p class="blog-card-desc">Hakbang-hakbang na gabay para sa mga baguhang tsuper. Alamin kung kailan tatapak ng preno at kung paano basahin ang kinikilos ng mga unang pasahero.</p>
-              <div class="blog-card-footer">
-                <span>5 minutong basa</span>
-                <a href="/blog/day-1-walkthrough-guide.html">Basahin ang Gabay →</a>
+  async function goToPage(page) {
+    const totalPages = Math.ceil(totalItems / pageSize) || 1;
+    if (page < 1 || page > totalPages || isLoading) return;
+
+    currentPage = page;
+
+    // ① 若目标页已有缓存，秒级展示
+    if (pageDataCache[page]) {
+      renderPage(page, pageDataCache[page]);
+      updatePaginationUI();
+      const listContainer = document.getElementById('comments-list-container');
+      if (listContainer) listContainer.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    // ② 若没有缓存，发起异步请求拉取
+    if (apiEndpoint) {
+      isLoading = true;
+      if (loadingSkeleton) loadingSkeleton.classList.remove('hidden');
+      updatePaginationUI();
+
+      try {
+        const requestUrl = new URL(apiEndpoint);
+        if (siteIdentifier) requestUrl.searchParams.set('site', siteIdentifier);
+        if (currentDomain) requestUrl.searchParams.set('domain', currentDomain);
+        if (clientPageKey) requestUrl.searchParams.set('page_key', clientPageKey);
+        requestUrl.searchParams.set('page', String(page));
+        requestUrl.searchParams.set('limit', String(pageSize));
+
+        const res = await fetch(requestUrl.toString(), { redirect: 'follow' });
+        if (res.ok) {
+          const data = await res.json();
+          let pageComments = [];
+          if (Array.isArray(data.comments)) {
+            pageComments = data.comments;
+          }
+          if (data.total !== undefined && Number(data.total) > 0) {
+            totalItems = Number(data.total);
+          }
+          pageDataCache[page] = pageComments;
+          renderPage(page, pageComments);
+        } else {
+          throw new Error('HTTP ' + res.status);
+        }
+      } catch (err) {
+        console.warn('Async comments page fetch failed:', err);
+        // 优雅降级：若本地有更多烘焙数据则提取切片
+        const fallbackSlice = bakedComments.slice((page - 1) * pageSize, page * pageSize);
+        if (fallbackSlice.length > 0) {
+          pageDataCache[page] = fallbackSlice;
+          renderPage(page, fallbackSlice);
+        }
+      } finally {
+        isLoading = false;
+        if (loadingSkeleton) loadingSkeleton.classList.add('hidden');
+        updatePaginationUI();
+        const listContainer = document.getElementById('comments-list-container');
+        if (listContainer) listContainer.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } else {
+      // 未配置 API 时直接从本地数据切片
+      const localSlice = bakedComments.slice((page - 1) * pageSize, page * pageSize);
+      pageDataCache[page] = localSlice;
+      renderPage(page, localSlice);
+      updatePaginationUI();
+      const listContainer = document.getElementById('comments-list-container');
+      if (listContainer) listContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => goToPage(currentPage - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goToPage(currentPage + 1));
+
+  updatePaginationUI();
+
+  // ③ 异步探测：后台静默同步线上最新真实评论总数与分页
+  if (apiEndpoint) {
+    (async () => {
+      try {
+        const sniffUrl = new URL(apiEndpoint);
+        if (siteIdentifier) sniffUrl.searchParams.set('site', siteIdentifier);
+        if (currentDomain) sniffUrl.searchParams.set('domain', currentDomain);
+        if (clientPageKey) sniffUrl.searchParams.set('page_key', clientPageKey);
+        sniffUrl.searchParams.set('page', '1');
+        sniffUrl.searchParams.set('limit', String(pageSize));
+        const res = await fetch(sniffUrl.toString(), { redirect: 'follow' });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.total !== undefined && Number(data.total) > totalItems) {
+            totalItems = Number(data.total);
+            if (Array.isArray(data.comments) && data.comments.length > 0) {
+              pageDataCache[1] = data.comments;
+              if (currentPage === 1) renderPage(1, data.comments);
+            }
+            updatePaginationUI();
+          }
+        }
+      } catch (_) {}
+    })();
+  }
+
+  // ======================
+  // 2. LocalStorage 待审管理与 7 天 TTL
+  // ======================
+  function getLocalReviews() {
+    try {
+      const data = localStorage.getItem(STORAGE_KEY);
+      const list = data ? JSON.parse(data) : [];
+      if (!Array.isArray(list)) return [];
+      const cutoff = Date.now() - PENDING_TTL;
+      const fresh = list.filter(item => {
+        const t = item.savedAt || new Date(item.timestamp || 0).getTime();
+        return t >= cutoff;
+      });
+      if (fresh.length !== list.length) {
+        saveLocalReviews(fresh);
+      }
+      return fresh;
+    } catch {
+      return [];
+    }
+  }
+
+  function saveLocalReviews(list) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+    } catch (e) {
+      console.warn('LocalStorage save failed:', e);
+    }
+  }
+
+  function renderStars(rating) {
+    let stars = '';
+    for (let i = 0; i < 5; i++) {
+      const color = i < rating ? 'text-amber-500 fill-amber-500' : 'text-neutral-300 dark:text-neutral-700';
+      stars += `<svg class="w-3.5 h-3.5 inline ${color}" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+    }
+    return stars;
+  }
+
+  function setFormMsg(text, type) {
+    if (!formMsg) return;
+    if (!text) {
+      formMsg.classList.add('hidden');
+      return;
+    }
+    formMsg.textContent = text;
+    formMsg.className = `text-xs font-semibold ${type === 'error' ? 'text-rose-500' : 'text-emerald-500'}`;
+    formMsg.classList.remove('hidden');
+  }
+
+  function syncAndRenderLocalReviews() {
+    if (!localContainer) return;
+    const list = getLocalReviews();
+    if (list.length === 0) {
+      localContainer.classList.add('hidden');
+      localContainer.innerHTML = '';
+      return;
+    }
+
+    const remaining = [];
+    let html = '';
+
+    for (const item of list) {
+      const isBaked = bakedComments.some(c => 
+        (c.id && c.id === item.id) || 
+        (c.nickname === item.nickname && c.content === item.content)
+      );
+
+      if (isBaked) {
+        continue;
+      }
+
+      const itemTime = item.savedAt || new Date(item.timestamp).getTime();
+      const avColor = getClientAvatarColor(item.nickname);
+      const avInitial = getClientInitial(item.nickname);
+
+      if (itemTime < buildTimestamp) {
+        remaining.push(item);
+        html += `
+          <div class="bg-rose-50/80 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-900/60 p-4 rounded-2xl relative">
+            <div class="flex items-center justify-between mb-2.5">
+              <div class="flex items-center gap-2.5">
+                <div class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shrink-0 select-none ${avColor}">
+                  ${avInitial}
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-rose-700 dark:text-rose-400 text-sm">${item.nickname}</span>
+                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300">
+                    🔴 Not Approved
+                  </span>
+                </div>
               </div>
+              <button type="button" class="text-xs text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-200 cursor-pointer" onclick="window.removeLocalReview('${item.id}')">Dismiss</button>
             </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-card-body">
-              <span class="blog-tag">Mekanismo ng Pera</span>
-              <h3 class="blog-card-title"><a href="/blog/fare-calculator-change-mechanics.html">Saktong Sukli at Kalkulador: Sikreto sa Pagpapanatili ng Satisfaction</a></h3>
-              <p class="blog-card-desc">Huwag hayaang magalit ang mga pasahero dahil sa kulang na sukli. Pormula sa tamang kombinasyon ng mga barya at tamang bilis ng pag-abot.</p>
-              <div class="blog-card-footer">
-                <span>4 minutong basa</span>
-                <a href="/blog/fare-calculator-change-mechanics.html">Basahin ang Gabay →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-card-body">
-              <span class="blog-tag">Listahan ng Halimaw</span>
-              <h3 class="blog-card-title"><a href="/blog/monster-list-lore-secrets.html">Talaan ng mga Halimaw: Paring Pugot, Doppelganger at Lihim ng Balete</a></h3>
-              <p class="blog-card-desc">Kumpletong listahan ng mga kakaibang nilalang sa laro, mga palatandaan sa kanilang mukha, at tamang oras ng paggamit ng radyo at sagradong gamit.</p>
-              <div class="blog-card-footer">
-                <span>7 minutong basa</span>
-                <a href="/blog/monster-list-lore-secrets.html">Basahin ang Gabay →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="blog-card">
-            <div class="blog-card-body">
-              <span class="blog-tag">Opisyal na Download</span>
-              <h3 class="blog-card-title"><a href="/blog/download-web-android-apk-safety.html">Opisyal na Download: Gabay sa itch.io, Steam at Ligtas na APK</a></h3>
-              <p class="blog-card-desc">Mag-ingat sa mga pekeng APK na kumakalat sa social media. Narito ang direktang opisyal na link para sa PC, Mac, Linux at orihinal na Android build.</p>
-              <div class="blog-card-footer">
-                <span>3 minutong basa</span>
-                <a href="/blog/download-web-android-apk-safety.html">Basahin ang Gabay →</a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div style="text-align: center; margin-top: 2.5rem;">
-          <a href="/blog/" class="btn-ctrl" style="display:inline-flex; padding:0.75rem 2rem; font-size:1rem; border-color:var(--accent-pink);">
-            📚 Tingnan ang Lahat ng Gabay sa Blog Hub
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Comments & Feedback Section -->
-    <section id="comments" class="container">
-      <div class="comments-section">
-        <div style="margin-bottom: 2rem;">
-          <h2 style="font-size: 1.8rem; font-weight: 900; color: #fff; margin-bottom: 0.5rem;">Kuwentuhan ng mga Tsuper sa JEEP HORROR</h2>
-          <p style="color: var(--text-secondary);">Ibahagi ang iyong karanasan, tips, o nakatatakot na engkuwentro sa laro.</p>
-        </div>
-
-        <!-- Submission Form -->
-        <form id="comment-form" class="comment-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="comment-name">Pangalan / Alyas *</label>
-              <input type="text" id="comment-name" class="form-control" placeholder="Halimbawa: Juan Driver" required>
-            </div>
-            <div class="form-group">
-              <label for="comment-email">Email (Opsyonal)</label>
-              <input type="email" id="comment-email" class="form-control" placeholder="hindi ilalathala">
-            </div>
+            <div class="flex gap-1 mb-2 pl-9.5">${renderStars(item.rating)}</div>
+            <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed whitespace-pre-wrap pl-9.5">${item.content}</p>
+            <p class="text-[11px] text-rose-500/80 dark:text-rose-400/80 mt-2 pl-9.5">Notice: This review did not meet content guidelines.</p>
           </div>
-          <div class="form-group">
-            <label for="comment-text">Iyong Komento o Karanasan *</label>
-            <textarea id="comment-text" class="form-control" placeholder="Ano ang pinakanakakatakot na pasaherong sumakay sa iyong jeep?" required></textarea>
+        `;
+      } else {
+        remaining.push(item);
+        html += `
+          <div class="bg-amber-50/80 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/60 p-4 rounded-2xl relative">
+            <div class="flex items-center justify-between mb-2.5">
+              <div class="flex items-center gap-2.5">
+                <div class="w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shrink-0 select-none ${avColor}">
+                  ${avInitial}
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="font-bold text-amber-700 dark:text-amber-400 text-sm">${item.nickname}</span>
+                  <span class="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300">
+                    🟡 Under Review
+                  </span>
+                </div>
+              </div>
+              <span class="text-[11px] text-neutral-400 dark:text-neutral-500 font-medium">Just now</span>
+            </div>
+            <div class="flex gap-1 mb-2 pl-9.5">${renderStars(item.rating)}</div>
+            <p class="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed whitespace-pre-wrap pl-9.5">${item.content}</p>
+            <p class="text-[11px] text-amber-600/80 dark:text-amber-400/80 mt-2 pl-9.5">Only visible to you. Will be officially published after the next automated build.</p>
           </div>
-          <div>
-            <button type="submit" id="submit-comment-btn" class="btn-ctrl" style="background:var(--accent-pink); border-color:var(--accent-pink); color:#fff; font-weight:bold; padding:0.6rem 1.5rem;">
-              Ipadala ang Mensahe
-            </button>
-            <span id="form-feedback" style="display:none; margin-left:1rem; font-weight:600;"></span>
-          </div>
-        </form>
+        `;
+      }
+    }
 
-        <!-- Static Baked Comments List -->
-        <div id="comments-list" class="comment-list">
-<!-- BAKED_COMMENTS_START -->
+    saveLocalReviews(remaining);
 
-<!-- BAKED_COMMENTS_END -->
-        </div>
-      </div>
-    </section>
-  </main>
+    if (html) {
+      localContainer.innerHTML = html;
+      localContainer.classList.remove('hidden');
+    } else {
+      localContainer.innerHTML = '';
+      localContainer.classList.add('hidden');
+    }
+  }
 
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4>Tungkol sa JEEP HORROR</h4>
-        <p style="color:var(--text-secondary); margin-bottom:1rem;">
-          Isang experimental na survival indie horror game na likha ng <strong>Neuroticfly Games</strong> gamit ang Godot Engine. Walang ginamit na Generative AI.
-        </p>
-        <p>I-wishlist ang opisyal na bersyon sa <a href="https://store.steampowered.com/app/4676680/JEEP_HORROR/" target="_blank" rel="noopener">Steam Store</a> o suportahan sa <a href="https://www.patreon.com/neuroticfly" target="_blank" rel="noopener">Patreon</a>.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Mga Mabilisang Link</h4>
-        <ul>
-          <li><a href="#play">Maglaro sa Browser</a></li>
-          <li><a href="/blog/day-1-walkthrough-guide.html">Gabay sa Survival</a></li>
-          <li><a href="/blog/monster-list-lore-secrets.html">Talaan ng mga Halimaw</a></li>
-          <li><a href="/blog/download-web-android-apk-safety.html">Opisyal na Download</a></li>
-          <li><a href="/en/">English Version</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Komunidad</h4>
-        <ul>
-          <li><a href="https://neuroticfly.itch.io/jeep-horror" target="_blank" rel="noopener">itch.io Page</a></li>
-          <li><a href="https://discord.gg/peFGsywsUy" target="_blank" rel="noopener">Official Discord</a></li>
-          <li><a href="https://twitter.com/neuroticfly" target="_blank" rel="noopener">Twitter / X</a></li>
-          <li><a href="https://www.youtube.com/@neuroticfly" target="_blank" rel="noopener">Developer YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2026 JEEP HORROR Fan Hub. Lahat ng karapatan sa laro ay pag-aari ng Neuroticfly Games. Ginawa para sa komunidad ng mga manlalaro.</p>
-    </div>
-  </footer>
+  window.removeLocalReview = function(id) {
+    const list = getLocalReviews().filter(x => x.id !== id);
+    saveLocalReviews(list);
+    syncAndRenderLocalReviews();
+  };
 
-  <!-- Cookie Consent Banner (Google Consent Mode v2) -->
-  <div id="consent-banner" class="consent-banner">
-    <p style="font-size:0.85rem; color:#e2e8f0; margin-bottom:0.5rem;">
-      Gumagamit kami ng cookies upang mapabuti ang karanasan sa paglalaro at analytics alinsunod sa Google privacy guidelines.
-    </p>
-    <div class="consent-actions">
-      <button id="consent-accept" class="btn-ctrl" style="background:var(--accent-pink); border-color:var(--accent-pink); color:#fff; font-size:0.8rem;">Tanggapin Lahat</button>
-      <button id="consent-decline" class="btn-ctrl" style="font-size:0.8rem;">Tanggihan</button>
-    </div>
-  </div>
+  syncAndRenderLocalReviews();
 
-  <!-- Scripts -->
-  <script src="/js/comments-data.js"></script>
-  <script src="/js/comments.js"></script>
-  <script src="/js/game-loader.js"></script>
-</body>
-</html>
+  // ======================
+  // 3. 提交新评论 (带 text/plain CORS 简单请求与限流感知)
+  // ======================
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
+    const formData = new FormData(form);
+    const content = String(formData.get('content') || '').trim();
+    const nickname = String(formData.get('nickname') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const rating = parseInt(formData.get('rating')) || 5;
+    const website_url = formData.get('website_url');
+
+    if (!content || !nickname) return;
+
+    const newId = 'c_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
+    const nowTime = Date.now();
+    const timestamp = new Date(nowTime).toISOString();
+
+    const newComment = {
+      id: newId,
+      pageKey: clientPageKey,
+      nickname: nickname,
+      email: email,
+      rating: rating,
+      content: content,
+      timestamp: timestamp,
+      savedAt: nowTime,
+      status: 'pending'
+    };
+
+    const currentList = getLocalReviews();
+    currentList.unshift(newComment);
+    saveLocalReviews(currentList);
+
+    syncAndRenderLocalReviews();
+    totalItems++;
+    updatePaginationUI();
+    form.reset();
+    setFormMsg('', '');
+
+    const emptyState = document.getElementById('empty-state');
+    if (emptyState) emptyState.style.display = 'none';
+
+    if (apiEndpoint) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Posting...';
+
+      try {
+        const response = await fetch(apiEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({
+            id: newId,
+            site: siteIdentifier,
+            domain: currentDomain || (typeof window !== 'undefined' ? window.location.host : ''),
+            page_key: clientPageKey,
+            nickname: nickname,
+            email: email,
+            rating: rating,
+            content: content,
+            website_url: website_url
+          })
+        });
+
+        if (response.ok) {
+          const resData = await response.json();
+          if (resData && resData.ok) {
+            setFormMsg('🎉 Review submitted! It will appear here officially after the next build.', 'ok');
+          } else if (resData && resData.error === 'rate_limited') {
+            setFormMsg('⏳ You are posting too fast — please wait a minute.', 'error');
+          }
+        }
+      } catch (err) {
+        console.warn('Remote sync error, safely preserved in LocalStorage:', err);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Post Review';
+      }
+    }
+  });
+})();</script></section></div></div></main><!-- 底部 --><footer class="mt-16 border-t border-neutral-200/80 dark:border-neutral-800 bg-white dark:bg-neutral-950 text-neutral-600 dark:text-neutral-400 text-sm transition-colors duration-200"><div class="max-w-[1600px] mx-auto px-4 md:px-6 py-12"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10"><!-- 品牌简介 --><div class="md:col-span-2 space-y-3"><div class="flex items-center gap-2 text-lg font-black text-neutral-900 dark:text-white uppercase tracking-wider"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" width="24" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none" viewBox="0 0 24 24" class="lucide lucide-gamepad-2 w-5 h-5 text-amber-500"><line x1="6" x2="10" y1="11" y2="11"></line><line x1="8" x2="8" y1="9" y2="13"></line><line x1="15" x2="15.01" y1="12" y2="12"></line><line x1="18" x2="18.01" y1="10" y2="10"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path></svg><span>JEEP HORROR</span></div><p class="text-neutral-500 dark:text-neutral-400 text-xs leading-relaxed max-w-sm">Play JEEP HORROR online for free in your browser! Drive the midnight graveyard shift, calculate fare change, and survive terrifying doppelgangers and entities in this viral indie horror game.</p><p class="text-[11px] text-neutral-400 dark:text-neutral-500">All trademarks, logos, and brand names belong to their respective owners.</p></div><!-- 动态分类导航 --><div class="space-y-3"><h4 class="text-xs font-bold uppercase tracking-wider text-neutral-900 dark:text-white">Categories</h4><ul class="space-y-1.5 text-xs"><li><a href="/games/horror-games" class="hover:text-amber-500 dark:hover:text-amber-400 transition">Horror Games</a></li></ul></div><!-- 法律合规与关于我们 --><div class="space-y-3"><h4 class="text-xs font-bold uppercase tracking-wider text-neutral-900 dark:text-white">Trust &amp; Legal</h4><ul class="space-y-1.5 text-xs"><li><a href="/about-us" class="hover:text-amber-500 dark:hover:text-amber-400 transition">About Us</a></li><li><a href="/privacy-policy" class="hover:text-amber-500 dark:hover:text-amber-400 transition">Privacy Policy</a></li><li><a href="/terms-of-use" class="hover:text-amber-500 dark:hover:text-amber-400 transition">Terms of Use</a></li><li><a href="/copyright-notice" class="hover:text-amber-500 dark:hover:text-amber-400 transition">Copyright Notice</a></li></ul></div></div><!-- 版权与声明 --><div class="border-t border-neutral-100 dark:border-neutral-900 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400 dark:text-neutral-500"><div>© 2026 JEEP HORROR. All rights reserved.</div><div class="flex items-center gap-4"><span>Fast SSG &amp; Zero Trackers</span><span>•</span><span>Astro Powered</span></div></div></div></footer><!-- 欧洲 GDPR 与 Cookie 同意弹窗 --><div id="cookie-consent-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-50 bg-neutral-900/95 backdrop-blur-md border border-neutral-800 p-5 rounded-2xl shadow-2xl transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none" role="dialog" aria-live="polite" aria-label="Cookie and Privacy Consent"><div class="flex items-start gap-3"><span class="text-2xl shrink-0">🍪</span><div class="space-y-2"><h3 class="text-sm font-bold text-white tracking-wide">We Value Your Privacy</h3><p class="text-xs text-neutral-400 leading-relaxed">JEEP HORROR uses cookies to ensure game progress is saved, analyze traffic, and support free gameplay with relevant advertisements. By clicking "Accept All", you consent to our use of cookies under our<a href="/privacy-policy" class="text-amber-400 hover:underline">Privacy Policy</a>.</p><div class="flex items-center gap-2 pt-2"><button id="cookie-accept-btn" type="button" class="px-4 py-2 bg-amber-400 hover:bg-amber-300 text-neutral-950 text-xs font-bold rounded-xl transition shadow-sm cursor-pointer">Accept All</button><button id="cookie-decline-btn" type="button" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-neutral-300 text-xs font-semibold rounded-xl transition cursor-pointer">Essential Only</button></div></div></div></div><script type="module">var e=`cookie_consent_choice`,t=document.getElementById(`cookie-consent-banner`),n=document.getElementById(`cookie-accept-btn`),r=document.getElementById(`cookie-decline-btn`);function i(e){if(typeof window<`u`&&window.gtag){let t=e?`granted`:`denied`;window.gtag(`consent`,`update`,{ad_storage:t,ad_user_data:t,ad_personalization:t,analytics_storage:t})}}function a(){t&&(t.classList.remove(`translate-y-24`,`opacity-0`,`pointer-events-none`),t.classList.add(`translate-y-0`,`opacity-100`))}function o(){t&&(t.classList.add(`translate-y-24`,`opacity-0`,`pointer-events-none`),t.classList.remove(`translate-y-0`,`opacity-100`))}var s=localStorage.getItem(e);s?s===`accepted`&&i(!0):setTimeout(a,1e3),n?.addEventListener(`click`,()=>{localStorage.setItem(e,`accepted`),i(!0),o()}),r?.addEventListener(`click`,()=>{localStorage.setItem(e,`declined`),i(!1),o()});</script><!-- Adsterra Social Bar 全局互动消息条广告 --></body></html>
