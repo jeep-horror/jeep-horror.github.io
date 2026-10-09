@@ -7,7 +7,6 @@ Play JEEP HORROR online for free in your browser! Drive the midnight graveyard s
 - About Us: https://jeep-horror.github.io/about-us
 
 ## Games Collection
-- **Blockudoku - Jugar Gratis Online** (ES): https://jeep-horror.github.io/es/game/es/blockudoku
 - **JEEP HORROR - Play Free Online Indie Horror Game** (Featured Game): https://jeep-horror.github.io/
 - **JEEP HORROR - Play Online Free**: https://jeep-horror.github.io/game/jeep-horror
 - **JEEP HORROR - Maglaro Online nang Libre** (TL Featured Game): https://jeep-horror.github.io/tl
