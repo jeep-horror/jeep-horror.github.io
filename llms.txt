@@ -14,6 +14,7 @@ Play JEEP HORROR online for free in your browser! Drive the midnight graveyard s
 - **Five Nights At Frickbear's 3 - Fan Horror Game Online**: https://jeep-horror.github.io/game/five-nights-at-frickbears-3
 - **FNAF Afton's Nightmare - Fan Horror Game Online**: https://jeep-horror.github.io/game/fnaf-aftons-nightmare
 - **Granny - Scary Horror Escape Game Online**: https://jeep-horror.github.io/game/granny
+- **Granny: Escape Together - Multiplayer Horror Escape Game Online**: https://jeep-horror.github.io/game/granny-escape-together
 - **Granny Horror 3 - Scary Horror Escape Sequel Online**: https://jeep-horror.github.io/game/granny-horror-3
 - **Granny: Playroom of Fear - Scary Horror Escape Game Online**: https://jeep-horror.github.io/game/granny-playroom-of-fear
 - **Huggy Playtime - Horror Factory Escape Online**: https://jeep-horror.github.io/game/huggy-playtime
@@ -21,6 +22,7 @@ Play JEEP HORROR online for free in your browser! Drive the midnight graveyard s
 - **Insomnia: Jeff the Killer - Horror Visual Novel Game Online**: https://jeep-horror.github.io/game/insomnia-jeff-the-killer
 - **JEEP HORROR - Play Online Free**: https://jeep-horror.github.io/game/jeep-horror
 - **Mall Escape: Backrooms Files - Stealth Horror Escape Game Online**: https://jeep-horror.github.io/game/mall-escape-backrooms-files
+- **Mother-Bird is Here! - Haunted Mansion Escape Game Online**: https://jeep-horror.github.io/game/mother-bird-is-here
 - **Suzy Says - Mascot Horror Game Online**: https://jeep-horror.github.io/game/suzy-says
 - **The Man from the Window 2 - Viral Horror Game Online**: https://jeep-horror.github.io/game/the-man-from-the-window-2
 - **JEEP HORROR - Maglaro Online nang Libre** (TL Featured Game): https://jeep-horror.github.io/tl
